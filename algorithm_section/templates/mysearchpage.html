@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="static/styles/searchlooks.css">
+</head>
+<body>
+
+<div class="container">
+	<div class="header">
+		<p class="headtxt">Let's begin your Journey together!</p>
+  <input type="text" id="searchQuery" placeholder="Search for your favorites">
+  <button onclick="searchSong()" class="searchbtn"><img src="static/images/search.png" class="searchimg"></button>
+	</div>
+   <h2 id="songTitle"></h2>
+   <h3 id="artistName"></h3>
+	   <img id="albumImage" src="static/images/backgroundimage.jpg" alt="Album Image">
+
+</div>
+
+<div id="songInfo"></div>
+
+<script>
+async function searchSong() {
+  try {
+    const query = document.getElementById('searchQuery').value.trim();
+    if (!query) {
+      console.log('Please enter a song title');
+      return;
+    }
+
+    const accessToken = 'BQDJdrd8oVcCx6bBO_W3GVqgt8HUnTbSs0Lihm8UNA8sksQjZ5ddE-WT3qMMc0jKK3BCR7-VxlYM3xWH2TsgxYCtW4nJeohAWebCk_CqawMKWHamcF94QLLyNNAMh3g6xkErj0b7L9_Pws-jfkHWJU_TZV_cbnk1LdlNlm1hxNVrmMjBfE0yN2fM-vtTki8xB1hP63wzu8BpR3BfwZqaI7I';
+    const searchUrl = `https://api.spotify.com/v1/search?q=${encodeURIComponent(query)}&type=track`;
+
+    const response = await fetch(searchUrl, {
+      headers: {
+        'Authorization': `Bearer ${accessToken}`
+      }
+    });
+
+    if (!response.ok) {
+      throw new Error('Failed to search for the song');
+    }
+
+    const data = await response.json();
+    const firstTrack = data.tracks.items[0]; // Get the first track from the search results
+
+    if (!firstTrack) {
+      console.log('Song not found');
+      return;
+    }
+
+    document.getElementById('songTitle').textContent = `Song Title: ${firstTrack.name}`;
+    document.getElementById('artistName').textContent = `Artist: ${firstTrack.artists[0].name}`;
+    document.getElementById('albumImage').src = firstTrack.album.images[0].url;
+    document.getElementById('albumImage').alt = `${firstTrack.name} by ${firstTrack.artists[0].name}`;
+  } catch (error) {
+    console.error('Error searching for the song:', error);
+  }
+}
+</script>
+
+</body>
+</html>
+
