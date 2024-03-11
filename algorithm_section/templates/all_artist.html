@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Images from Spotify API</title>
+	<style>
+    #imageContainer1 {
+		background-color: yellow;
+    }
+	</style>
+</head>
+<body>
+    <!-- Divs where images will be displayed -->
+    <div id="imageContainer1"></div>
+    <div id="imageContainer2"></div>
+    <div id="imageContainer3"></div>
+
+    <script>
+        // Function to fetch images from the Spotify API
+        async function fetchImages() {
+            try {
+                // Make a GET request to the Spotify API endpoint to fetch images
+                const response = await fetch('https://api.spotify.com/v1/search?q=artist:David%20Bowie&type=track&limit=10', {
+            method: 'GET',
+            headers: {
+                'Authorization': 'Bearer BQBRFbkEtNPXhksEeqAYNWVU3ds1pHom2R9QSgDlS59-dM065W07ZvmzHVZysqFU2EZFYVQnpSlUUc3pxdkuBa1RnRi0a8qKgjxq7J4LCItRQssiMrWxfIaQiQyGuCG0Ek7TkjeVzPpCL35pVyqHfryMm4LPN3_YkqfbtNC7QXvhhI0iFXEmNC_9Ak974FXcD0Shxoyrx-9oIpJTg1XxLTw',
+		'Content-Type': 'application/json'
+            }
+		})
+        }));
+                const data = await response.json();
+
+                // Extract image URLs from the response data
+                const imageUrls = data.images.map(image => image.url);
+
+                // Update divs with the received images
+                const imageContainers = document.querySelectorAll('[id^="imageContainer"]');
+                imageUrls.forEach((imageUrl, index) => {
+                    const imgElement = document.createElement('img');
+                    imgElement.src = imageUrl;
+                    imageContainers[index].appendChild(imgElement);
+                });
+            } catch (error) {
+                console.error('Error fetching images:', error);
+            }
+        }
+
+        // Call the fetchImages function when the page loads
+        fetchImages();
+    </script>
+</body>
+</html>
+

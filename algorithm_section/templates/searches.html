@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en"> 
+	<head>
+		<title>Search</title>
+			 <style> 
+.butn {
+	background-color: green;
+	width: 130px;
+	height: 50px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+			 </style>
+	</head>
+		<body>
+			
+			<ul>
+                <div class="btn" onclick="changeUrl('{{ url_for('search_page') }}')" >
+			<p>This is home</p>
+                    <button type="submit" class="butn">Next</button>
+                  </div>
+                </ul>	
+
+		<script> 
+	function changeUrl(url) {
+        	window.location.href = url;
+		}
+		</script>
+				
+			</body>
+		
+
+
+	</html>

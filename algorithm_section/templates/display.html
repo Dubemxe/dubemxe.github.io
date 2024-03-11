@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+
+    <style> 
+	#images {
+		background-color: blue;
+		width: 110px;
+		height: 50;
+	}
+    </style>
+</head>
+
+<body>
+    <div id="images">
+        <!-- Images will be dynamically inserted here -->
+    </div>
+
+
+    <script>
+        // JavaScript code to fetch images from the Spotify API and insert them into the HTML
+
+        // Make a request to the Spotify API to search for tracks, albums, etc.
+        fetch('https://api.spotify.com/v1/search?q=artist:Drake%20&type=track&limit=2', {
+            method: 'GET',
+            headers: {
+                'Authorization': 'Bearer BQA6uF-FHGA6eZuW_xrPsGoGCptP92sqYABYaWoz6RTPRUx4oiJ7p_oEKvoaGruSXmEIIsf3ysnVbs_GGm8KyZM8BWF6ghDbLwdpSH5qP6HnEzZZTYgs_hTMl27JmfdXICkeEaA20ov-gOYepuQG_il34E_bQ7vaE2AAjZUiodFrZUVJSvmPRAWDbnHea7MXzSfIzqrWEe85uNV28aNYZEY',
+                'Content-Type': 'application/json'
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            const imagesContainer = document.getElementById('images');
+
+            // Iterate through the results and extract the image URLs
+            data.tracks.items.forEach(track => {
+                track.album.images.forEach(image => {
+                    // Create an <img> element for each image and append it to the container
+                    const img = document.createElement('img');
+                    img.src = image.url;
+                    imagesContainer.appendChild(img);
+                });
+            });
+        })
+        .catch(error => {
+            console.error('Error fetching data:', error);
+        });
+    </script>
+</body>
+</html>
