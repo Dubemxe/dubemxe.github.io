@@ -1,38 +1,42 @@
 .container {
+  background-image: url('images/background_image.jpg');
   width: 100%;
-  height: 1430px;
-  background-color: rgb(147, 147, 224);
-}
-.header {
-  background-color: rgb(147, 147, 224);
-  height: 120px;
-  width: 100%;
-  padding-top: 25px;
+  height: 1500px;
+  
+ 
 }
 
-.headtxt {
-	color: white;
-	font-size: 30px;
-	font-weight: bolder;
-	margin-left: 35%;
-	margin-top: 5px;
-}
-#albumImage {
+.header {
+  height: 120px;
   width: 100%;
-  height: 1300px;
 }
-#searchQuery {
+.bubbles {
+  background-color: rgb(20, 20, 82);
+  height: 80px;
+  width: 100%;
+
+}
+#songInfo {
+  background-color: rgb(11, 11, 53);
+  height: 80px;
+  width: 100%;
+}
+.footer {
+  height: 60px;
+  width: 100%;
+}
+.searchbar {
   width: 800px;
   height: 50px;
-  margin-left: 220px;
-  margin-top: 2px;
-  margin-bottom: 15px;
+  margin-left: 180px;
+  margin-top: 35px;
   font-size: 20px;
   font-weight: bold;
-  background-color: white;
+  background-color: rgb(250, 239, 239);
   border: none;
   border-radius: 14px;
 text-align: center;
+box-shadow:  12px 12px 12px rgba(93, 93, 247, 0.1);
 
 }
 .searchbtn {
@@ -40,18 +44,22 @@ text-align: center;
   width: 50px;
   margin-left: 0px;
   height: 50px;
-  margin-top: 2px;
-  margin-bottom: 13px;
+  margin-top: 35px;
   font-size: 20px;
   font-weight: bold;
-  background-color: white;
+  background-color: rgb(240, 233, 233);
   border: none;
   border-radius: 14px;
 text-align: center;
-cursor: pointer;
 
 }
 .searchimg {
   width: 25px;
   height: 25px;
+}
+
+.everything_box {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
 }
