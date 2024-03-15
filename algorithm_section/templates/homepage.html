@@ -15,8 +15,8 @@
     <div class="text_section">
   <p class="p1">Welcome to JMusic</p>
   <p class="p2">All your favorites are here</p></div>
-  <img src="images/user.png" class="pic1">
-  <img src="images/menu.png" class="pic2">
+  <img src="static/images/user.png" class="pic1">
+  <img src="static/images/menu.png" class="pic2">
   
 
   
@@ -26,23 +26,19 @@
 <div class="round">
 <p class="p3">Select preferred Artists</p></div>
   <div class="select_boxes">
-<div class="header"></div>
-<div class="header"></div>
-<div class="header"></div>
-<div class="header"></div>
-<div class="header"></div>
-<div class="header"></div>
+<div id="artistInfo"></div>
+<div id="artistInfo2"></div>
+<div id="artistInfo3"></div>
+<div id="artistInfo4"></div>
+<div id="artistInfo5"></div>
+<div id="artistInfo6"></div>
 </div>
 
-<button class="butn">Continue</button>
+<button class="butn" onclick="changeUrl('{{ url_for('search_page') }}')">Continue</button>
 </div>
 </div>
 
-<script>
-  function changeUrl(url) {
-                window.location.href = url;
-                }
-</script>
+<script src="static/get_info.js"></script>
 
   </body>
 </html>

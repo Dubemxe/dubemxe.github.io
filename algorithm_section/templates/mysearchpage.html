@@ -7,17 +7,25 @@
 
 <div class="container">
 	<div class="header">
-		<p class="headtxt">Let's begin your Journey together!</p>
   <input type="text" id="searchQuery" placeholder="Search for your favorites">
   <button onclick="searchSong()" class="searchbtn"><img src="static/images/search.png" class="searchimg"></button>
 	</div>
    <h2 id="songTitle"></h2>
    <h3 id="artistName"></h3>
-	   <img id="albumImage" src="static/images/backgroundimage.jpg" alt="Album Image">
 
-</div>
-
+<div class="everything_box">
 <div id="songInfo"></div>
+<div class="bubbles"></div>
+        <div class="bubbles"></div>
+        <div class="bubbles"></div>
+        <div class="bubbles"></div>
+        <div class="bubbles"></div>
+        <div class="bubbles"></div>
+        <div class="bubbles"></div>
+        <div class="bubbles"></div>
+      </div>
+        <div class="footer"></div>
+</div>
 
 <script>
 async function searchSong() {
@@ -28,7 +36,7 @@ async function searchSong() {
       return;
     }
 
-    const accessToken = 'BQDJdrd8oVcCx6bBO_W3GVqgt8HUnTbSs0Lihm8UNA8sksQjZ5ddE-WT3qMMc0jKK3BCR7-VxlYM3xWH2TsgxYCtW4nJeohAWebCk_CqawMKWHamcF94QLLyNNAMh3g6xkErj0b7L9_Pws-jfkHWJU_TZV_cbnk1LdlNlm1hxNVrmMjBfE0yN2fM-vtTki8xB1hP63wzu8BpR3BfwZqaI7I';
+    const accessToken = 'BQBUMW2YJsBesLzc3_4ag2y2p1R8NWNCEwgeKxZ2jJiTvnAbZjhSEIugB4bh-iWQjM3kyJfgcO41-BeohlgrI1_XxiOIWl_V7OjLsDVI4pIwU2cfM7HRj7y4oK7HACgp5NkjZlBp5yFbKQjbec3WG9pjL1tIXxnsELTo_L0eTmpnqY-6w5jusoyZbC8e3EeCiOPAMizcDpH7qFT-1A9U7tU';
     const searchUrl = `https://api.spotify.com/v1/search?q=${encodeURIComponent(query)}&type=track`;
 
     const response = await fetch(searchUrl, {
@@ -49,7 +57,7 @@ async function searchSong() {
       return;
     }
 
-    document.getElementById('songTitle').textContent = `Song Title: ${firstTrack.name}`;
+    document.getElementById('songTitle').textContent = `Title: ${firstTrack.name}`;
     document.getElementById('artistName').textContent = `Artist: ${firstTrack.artists[0].name}`;
     document.getElementById('albumImage').src = firstTrack.album.images[0].url;
     document.getElementById('albumImage').alt = `${firstTrack.name} by ${firstTrack.artists[0].name}`;
