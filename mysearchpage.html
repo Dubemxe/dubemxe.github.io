@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <link rel="stylesheet" href="static/styles/searchlooks.css">
+</head>
+<body>
+
+<div class="container">
+        <div class="header">
+  <input type="text" id="searchQuery" placeholder="Search for your favorites">
+  <button onclick="searchSong()" class="searchbtn"><img src="static/images/search.png" class="searchimg"></button>
+        </div>
+   <h2 id="songTitle"></h2>
+   <h3 id="artistName"></h3>
+
+<div class="everything_box">
+<div id="songInfo"></div>
+<div class="bubbles"></div>
+        <div class="bubbles"></div>
+        <div class="bubbles"></div>
+        <div class="bubbles"></div>
+        <div class="bubbles"></div>
+        <div class="bubbles"></div>
+        <div class="bubbles"></div>
+        <div class="bubbles"></div>
+      </div>
+        <div class="footer"></div>
+</div>
+
+<script>
+async function searchSong() {
+  try {
+     const query = document.getElementById('searchQuery').value.trim();
+    if (!query) {
+      console.log('Please enter a song title');
+      return;
+    }
+
+    const accessToken = 'BQCPIaa5GlZV4ChLg48XsiAsBdk6rLm0Ajq-mxLIzTPOTG4cfcj5GQ1LX2H_Z0QUgkQ_eZ6-VHC9j8TMr9u31LT0wtoNVWf0EQkH8EU0iS0LRJJQMXT0q7BM4r1OWo8YOmONEeyFhU4PTkEI9mMu8Zytxd5J8wEpRCA-sBv-n0IUPZo_2ZYFth8SPtYx2qSwGrcjPv9KPktyPutgzoXZeow';
+    const searchUrl = `https://api.spotify.com/v1/search?q=${encodeURIComponent(query)}&type=track`;
+
+    const response = await fetch(searchUrl, {
+      headers: {
+        'Authorization': `Bearer ${accessToken}`
+      }
+    });
+
+    if (!response.ok) {
+      throw new Error('Failed to search for the song');
+    }
+
+    const data = await response.json();
+    const firstTrack = data.tracks.items[0]; // Get the first track from the search results
+
+    if (!firstTrack) {
+      console.log('Song not found');
+      return;
+    }
+
+    document.getElementById('songTitle').textContent = `Title: ${firstTrack.name}`;
+    document.getElementById('artistName').textContent = `Artist: ${firstTrack.artists[0].name}`;
+    document.getElementById('albumImage').src = firstTrack.album.images[0].url;
+    document.getElementById('albumImage').alt = `${firstTrack.name} by ${firstTrack.artists[0].name}`;
+  } catch (error) {
+    console.error('Error searching for the song:', error);
+  }
+}
+</script>
+
+</body>
+</html>
