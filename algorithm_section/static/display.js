@@ -2,7 +2,7 @@
         fetch('https://api.spotify.com/v1/search?q=artist:David%20Bowie&type=track&limit=10', {
             method: 'GET',
             headers: {
-                'Authorization': 'Bearer BQC-ZqbS8nw8K7KlQxOyFoWXjq0u4O5r8FEjUplGutRDKBd_pPykXiSF31COpwB2eGkqFRqSQEhLaz5CxO7lUIwrlcOshZcpzZAYMZ0WLcOvYsZf0QKlljeCmSDB0pZGHVQ0cRs-4XoPTHrhUvCLkMefIKWq8Ps-LQhd8i1-wojyRaH9XYwPfufSqWjqzw7QdIMdh4w7yx7xYgoHbfg',n
+                'Authorization': 'Bearer BQCLz_O-XrrQJXO6lsaKKi13Xyo2WzQtqeeuqZBmo9HEzLd7vPdXKBM0QCy-GMKLKZf_N-3a-aNm68GGFCXehhR9vBWY0t7hV9JFW8iAgFUNVJFBLahanAelCpBZIs3m-Qtb63S6M7ZaRtMVNbVgdG3k6fGIXv7Hrl__rqoByANpu_520eJIxVuJV35UcZAU7BOprJZSlAWjAA-OaJNH22I',
                 'Content-Type': 'application/json'
             }
         })

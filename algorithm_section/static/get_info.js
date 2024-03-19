@@ -4,7 +4,7 @@ function changeUrl(url) {
 // get info function
 async function getArtistInfo(artistName) {
   try {
-    const accessToken = 'BQDlMYF0oTCnf2kDtJdgtL7qMhytcIJizj3CzFGm93gGJsjf9SUi-5Wy_ls5V5vJKVQVeFzO4pkW6_TyCLefEerOLeOQWhP_-GdfOkA_qfoshLVnnQwdbiiKq13NQiVdGB6gzWRUJLhVg-BRertqlh0kuy_e4MEB8kQcblNr4Q7CIOwVuDCCt5EuXSXlzZSs7RY7cw9sfHn68V0WNfpmQU8';
+    const accessToken = 'BQDvx_q08OoaDIIA70QfqVWcfm9xNYwi5yGkm6TG8FM4k0a_WkPNyyZX2U-Tbd7ju_cGuDck0t0nZvkqleU6z7P2L9X8NFORETA9_q7_1RvP9zjxnO739-LI3Qh7gwEfsfX_LbTYHA-_EH5xMmmSS5kGv29UTfbCs7X4TZrroDFZGf37CEG7mB-pkLuyI2j2hsTC17IXB03Q9ez96_2-BxM';
     const searchUrl = `https://api.spotify.com/v1/search?q=${encodeURIComponent(artistName)}&type=artist`;
 
     const response = await fetch(searchUrl, {
@@ -22,7 +22,7 @@ async function getArtistInfo(artistName) {
     if (!artist) {
       return '<div>Artist not found</div>';
     }
-
+    // Handle the display in HTML format
     const artistInfoHTML = `
       <div>
       	<img src="${artist.images[0].url}" alt="${artist.name}" class="artist_image">
@@ -86,7 +86,7 @@ getArtistInfo(artistName5)
   });
 
 // for div6
-const artistName6 = 'Jeriq';
+const artistName6 = 'Gunna';
 const artistInfoDiv6 = document.getElementById('artistInfo6');
 
 getArtistInfo(artistName6)

@@ -14,10 +14,11 @@ def homepage():
 @app.route('/searchpage', strict_slashes=False)
 def search_page():
     '''Search return'''
-    return render_template('mysearchpage.html')
+    return render_template('searchpage.html')
 
 @app.route('/authorize')
 def authorize():
+    '''Retrieves access token from the spotify api'''
     client_id = '7551c1408176449aaba62ef47bd91b80'
     redirect_uri = 'http://172.20.218.35:5000/searchpage'
     scopes = 'user-read-private user-read-email'
@@ -25,9 +26,9 @@ def authorize():
     authorization_url = f'https://accounts.spotify.com/authorize?client_id={client_id}&response_type=token&redirect_uri={redirect_uri}&scope={scopes}'
 
     # Open the authorization URL in the default web browser
-    webbrowser.open(authorization_url)
+    #webbrowser.open(authorization_url)
 
-    return redirect(url_for('authorize'))
+    return redirect(authorization_url)
 
 
 
