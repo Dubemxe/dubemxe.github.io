@@ -4,7 +4,7 @@ function changeUrl(url) {
 // get info function
 async function getArtistInfo(artistName) {
   try {
-    const accessToken = 'BQCPIaa5GlZV4ChLg48XsiAsBdk6rLm0Ajq-mxLIzTPOTG4cfcj5GQ1LX2H_Z0QUgkQ_eZ6-VHC9j8TMr9u31LT0wtoNVWf0EQkH8EU0iS0LRJJQMXT0q7BM4r1OWo8YOmONEeyFhU4PTkEI9mMu8Zytxd5J8wEpRCA-sBv-n0IUPZo_2ZYFth8SPtYx2qSwGrcjPv9KPktyPutgzoXZeow';
+    const accessToken = 'BQAYU6TPKc9y2N2bY6-60TcFrlrUI0FV42toscOnPYwJffSbEN-oh_7gs-cKIuhR8M-S2HcDxZ9vn8gzFuZJzycM-eQCUQeQPYD929CIozXytVfiXW8icVaX88n4N4b4edtksm6BPJpspA4zrrzFDhULe1CI2FjjIM_g1z59f_-eoxMlpVlGLyCbJgm7ZVm4nx25OR1kOi23ufb5KKeLsGg';
     const searchUrl = `https://api.spotify.com/v1/search?q=${encodeURIComponent(artistName)}&type=artist`;
 
     const response = await fetch(searchUrl, {
@@ -86,7 +86,7 @@ getArtistInfo(artistName5)
   });
 
 // for div6
-const artistName6 = 'Jeriq';
+const artistName6 = 'Gunna';
 const artistInfoDiv6 = document.getElementById('artistInfo6');
 
 getArtistInfo(artistName6)
