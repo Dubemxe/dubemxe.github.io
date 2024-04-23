@@ -4,7 +4,7 @@ function changeUrl(url) {
 // get info function
 async function getArtistInfo(artistName) {
   try {
-    const accessToken = 'BQAYU6TPKc9y2N2bY6-60TcFrlrUI0FV42toscOnPYwJffSbEN-oh_7gs-cKIuhR8M-S2HcDxZ9vn8gzFuZJzycM-eQCUQeQPYD929CIozXytVfiXW8icVaX88n4N4b4edtksm6BPJpspA4zrrzFDhULe1CI2FjjIM_g1z59f_-eoxMlpVlGLyCbJgm7ZVm4nx25OR1kOi23ufb5KKeLsGg';
+    const accessToken = 'BQD_EY5XjDVKd6JBPhOvL0IpRdUeoW477tzEl_ik0Ci45r8cLaXSMlG3zTayaW-xeUDFPxegEvlbalCggCiy19PkXWaeqeO4YygguvBfv4Tmh7N0I94xBwf6-HnjsOcpjRQX-SSM9wzJlRS43S432mL70FpEt7oiou4euVRNIuy9XxZVHTrPlKCZHV7juVBalU9WdKZFfTFXTFN9ieGwUUc';
     const searchUrl = `https://api.spotify.com/v1/search?q=${encodeURIComponent(artistName)}&type=artist`;
 
     const response = await fetch(searchUrl, {
