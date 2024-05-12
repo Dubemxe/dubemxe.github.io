@@ -26,15 +26,17 @@
 <div class="round">
 <p class="p3">Select preferred Artists</p></div>
   <div class="select_boxes">
-<div id="artistInfo"></div>
-<div id="artistInfo2"></div>
-<div id="artistInfo3"></div>
-<div id="artistInfo4"></div>
-<div id="artistInfo5"></div>
-<div id="artistInfo6"></div>
-</div>
-
-<button class="butn" onclick="changeUrl('{{ url_for('search_page') }}')">Continue</button>
+<div id="artistInfo" onclick="getTrackIdsByArtist()"> <input type="checkbox" class="checker"></div>
+<div id="artistInfo2" onclick="getTrackIdsByArtist()"> <input type="checkbox" class="checker"></div>
+<div id="artistInfo3" onclick="getTrackIdsByArtist()"> <input type="checkbox" class="checker"></div>
+<div id="artistInfo4" onclick="getTrackIdsByArtist()"> <input type="checkbox" class="checker"></div>
+<div id="artistInfo5" onclick="getTrackIdsByArtist()"> <input type="checkbox" class="checker"></div>
+<div id="artistInfo6" onclick="getTrackIdsByArtist()"> <input type="checkbox" class="checker"></div>
+<div id="artistInfo4" onclick="getTrackIdsByArtist()"> <input type="checkbox" class="checker"></div>
+<div id="artistInfo5" onclick="getTrackIdsByArtist()"> <input type="checkbox" class="checker"></div>
+<div id="artistInfo6" onclick="getTrackIdsByArtist()"> <input type="checkbox" class="checker"></div>
+  </div>
+	<button class="butn" onclick="changeUrl('{{ url_for('search_page') }}')">Continue</button>
 </div>
 </div>
 

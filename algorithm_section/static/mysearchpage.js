@@ -6,15 +6,10 @@ async function searchSong() {
             console.log('Please enter a song title');
             return;
         }
-	// Personal access token from spotify
-        const accessToken = 'BQD_EY5XjDVKd6JBPhOvL0IpRdUeoW477tzEl_ik0Ci45r8cLaXSMlG3zTayaW-xeUDFPxegEvlbalCggCiy19PkXWaeqeO4YygguvBfv4Tmh7N0I94xBwf6-HnjsOcpjRQX-SSM9wzJlRS43S432mL70FpEt7oiou4euVRNIuy9XxZVHTrPlKCZHV7juVBalU9WdKZFfTFXTFN9ieGwUUc';
-        const searchUrl = `https://api.spotify.com/v1/search?q=${encodeURIComponent(query)}&type=track`;
+	// Personal nocodeapi url
+        const searchUrl = `https://v1.nocodeapi.com/joppa/spotify/yHjrDWjfpijJHOni/search?q=${encodeURIComponent(query)}&type=track`; //`https://api.spotify.com/v1/search?q=${encodeURIComponent(query)}&type=track`;
 
-        const response = await fetch(searchUrl, {
-            headers: {
-                'Authorization': `Bearer ${accessToken}`
-            }
-        });
+        const response = await fetch(searchUrl);
 
         if (!response.ok) {
             throw new Error('Failed to search for the song');
@@ -50,20 +45,15 @@ async function searchSong() {
 
 async function getTrackIdsByArtist(artistName) {
   try {
-           const accessToken = 'BQD_EY5XjDVKd6JBPhOvL0IpRdUeoW477tzEl_ik0Ci45r8cLaXSMlG3zTayaW-xeUDFPxegEvlbalCggCiy19PkXWaeqeO4YygguvBfv4Tmh7N0I94xBwf6-HnjsOcpjRQX-SSM9wzJlRS43S432mL70FpEt7oiou4euVRNIuy9XxZVHTrPlKCZHV7juVBalU9WdKZFfTFXTFN9ieGwUUc';
 
     // Encode the artist name for use in the URL
     const encodedArtistName = encodeURIComponent(artistName);
 
     // Construct the search URL for tracks by the artist
-    const searchUrl = `https://api.spotify.com/v1/search?q=${encodedArtistName}&type=track`;
+    const searchUrl = `https://v1.nocodeapi.com/joppa/spotify/yHjrDWjfpijJHOni/search?q=${encodedArtistName}&type=track`;
 
     // Make a GET request to the search URL with the Spotify API access token
-    const response = await fetch(searchUrl, {
-      headers: {
-        Authorization: `Bearer ${accessToken}`
-      }
-    });
+    const response = await fetch(searchUrl);
 
     // Check if the response is successful
     if (!response.ok) {
@@ -74,10 +64,11 @@ async function getTrackIdsByArtist(artistName) {
     const data = await response.json();
 
     // Extract the track IDs from the response
-    const trackIds = data.tracks.items.map(item => item.id);
+    let trackIds = data.tracks.items.map(item => item.id);
+
+    trackIds = trackIds.slice(0, 5);
 
     // Return the array of track IDs
-    //console.log("First tracks:", trackIds);
     return trackIds;
   } catch (error) {
     console.error('Error fetching track IDs by artist:', error);
@@ -86,57 +77,64 @@ async function getTrackIdsByArtist(artistName) {
 }
 
 
-async function fetchWithCORSProxy(url) {
-  const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
-  const response = await fetch(proxyUrl + url, {
-    headers: {
-      'X-Requested-With': 'XMLHttpRequest' // Some proxy services require this header
-    }
-  });
-  return await response.json();
-}
-
-async function getSongInfoAndAudioPreview(trackId) {
+async function getSongInfo() {
   try {
-    const accessToken = 'BQD_EY5XjDVKd6JBPhOvL0IpRdUeoW477tzEl_ik0Ci45r8cLaXSMlG3zTayaW-xeUDFPxegEvlbalCggCiy19PkXWaeqeO4YygguvBfv4Tmh7N0I94xBwf6-HnjsOcpjRQX-SSM9wzJlRS43S432mL70FpEt7oiou4euVRNIuy9XxZVHTrPlKCZHV7juVBalU9WdKZFfTFXTFN9ieGwUUc';
-    const response = await fetch(`https://api.spotify.com/v1/tracks/${trackId}`, {
-      headers: {
-        'Authorization': `Bearer ${accessToken}`
+
+      const accessToken = 'BQCY7mQAjmQUIwdc9yz6TXJQOZ0l30Roq8xcqUuwt10_t59EJ10AYpsncVm0OOFqmrq5QKYQqSELwU8a-ohJch8sCW0UYO2ieirhacokK-fz5LWgntoEbie_fIbpHtPg0xnBVyQhfgs4_TK9Ytct8Pu0mj-5nKMltvgPE_mnqpOe2KMdkPKYvBSr42IZPJB2zNunPvXHd8Lq_KAMyzVev3o';
+
+    // get ID with my function
+    const trackIds= await getTrackIdsByArtist('Drake', 'Davido');
+    
+    const songInfoPromises = trackIds.map(async (trackId) => {
+	    const trackInfoUrl =  /*`https://v1.nocodeapi.com/dubemxe/spotify/XBAzAzXdTbTjVcPt/tracks/${trackId}`;*/`https://api.spotify.com/v1/tracks/${trackId}`;
+	    const response = await fetch(trackInfoUrl, {
+		    headers: {
+			    Authorization: `Bearer ${accessToken}`
       }
     });
 
+    // Check if the response is successful
     if (!response.ok) {
-      throw new Error('Failed to fetch track info');
+      throw new Error('Failed to fetch song info');
     }
 
-    const trackData = await response.json();
-    const trackInfo = await fetchWithCORSProxy(url);
-    return trackInfo;
+    // Parse the response JSON
+    const data = await response.json();
+    const artistsR = data.artists.map(artist => artist.name).join(', ');
+    // Extract the song information from the response
+    const songInfoHTML = `
+    	<div class="musicInfo">
+	<img src="${data.album.images[0].url}" alt="${data.name} by ${artistsR}" class="albumImage">
+      <p class="artistName">${data.artists.map(artist => artist.name).join(', ')}</p>
+      <p class="songTitle">${data.name}</p>
+      <p class="duration">${msToTime(data.duration_ms)}</p>
+      </div>
+		`;
+    // Return the song information
+    return songInfoHTML;
+    });
 
-    // Extract song information
-    const songTitle = trackData.name;
-    const artistName = trackData.artists.map(artist => artist.name).join(', ');
-    const albumName = trackData.album.name;
-    const audioPreviewUrl = trackData.preview_url;
-
-    // Display song information
-    console.log('Song Title:', songTitle);
-    console.log('Artist:', artistName);
-    console.log('Album:', albumName);
-    console.log('Audio Preview URL:', audioPreviewUrl);
-
-      // Play audio preview if available
-    if (audioPreviewUrl) {
-      const audio = new Audio(audioPreviewUrl);
-      audio.play();
-    } else {
-      console.log('No audio preview available for this track');
-    }
-  } catch (error) {
-    console.error('Error fetching track info:', error);
+    const songInfos = await Promise.all(songInfoPromises);
+    return songInfos;
+    } catch (error) {
+    console.error('Error fetching song info:', error);
+    return [];
   }
 }
+function msToTime(duration) {
+  const minutes = Math.floor(duration / 60000);
+  const seconds = ((duration % 60000) / 1000).toFixed(0);
+  return minutes + ':' + (seconds < 10 ? '0' : '') + seconds;
+}
+
 // Example usage
-const artistName = 'Drake';
-const topTracks = getTrackIdsByArtist(artistName);
-getSongInfoAndAudioPreview(topTracks);
+getSongInfo()
+  .then(songInfoHTML => {
+    if (songInfoHTML) {
+	document.getElementById('songList').innerHTML = songInfoHTML;
+      // Use the retrieved song information as needed
+    } else {
+      console.log('Failed to fetch song info');
+    }
+  });
+
