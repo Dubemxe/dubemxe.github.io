@@ -54,7 +54,7 @@ async function getArtistInfo(artistName) {
     const searchData = await response.json();
     const artist = searchData.artists.items[0];
     if (!artist) {
-      return '<div>Artist not found</div>';
+      return '<div>Artist not available</div>';
     }
 
 // Extract track IDs from the artist's top tracks
