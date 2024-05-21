@@ -4,14 +4,11 @@ function changeUrl(url) {
 // get info function
 async function getArtistInfo(artistName) {
   try {
-    const accessToken = 'BQD_EY5XjDVKd6JBPhOvL0IpRdUeoW477tzEl_ik0Ci45r8cLaXSMlG3zTayaW-xeUDFPxegEvlbalCggCiy19PkXWaeqeO4YygguvBfv4Tmh7N0I94xBwf6-HnjsOcpjRQX-SSM9wzJlRS43S432mL70FpEt7oiou4euVRNIuy9XxZVHTrPlKCZHV7juVBalU9WdKZFfTFXTFN9ieGwUUc';
-    const searchUrl = `https://api.spotify.com/v1/search?q=${encodeURIComponent(artistName)}&type=artist`;
+    
+    const searchUrl = `https://v1.nocodeapi.com/vivalog/spotify/WAwCeOnCnQHWrEVP/search?q=${encodedArtistName}&type=track`;
 
-    const response = await fetch(searchUrl, {
-      headers: {
-        'Authorization': `Bearer ${accessToken}`
-      }
-    });
+
+    const response = await fetch(searchUrl);
 
     if (!response.ok) {
       throw new Error('Failed to fetch artist info');
