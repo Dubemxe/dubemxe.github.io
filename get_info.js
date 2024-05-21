@@ -4,8 +4,9 @@ function changeUrl(url) {
 // get info function
 async function getArtistInfo(artistName) {
   try {
+
     
-    const searchUrl = `https://v1.nocodeapi.com/vivalog/spotify/WAwCeOnCnQHWrEVP/search?q=${encodedArtistName}&type=track`;
+        const searchUrl = `https://v1.nocodeapi.com/vivalog/spotify/WAwCeOnCnQHWrEVP/search?q=${encodedArtistName}&type=artist`;
 
 
     const response = await fetch(searchUrl);
