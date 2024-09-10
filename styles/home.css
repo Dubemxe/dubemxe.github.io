@@ -125,8 +125,8 @@ transition: all 0.3s ease;
 
 }
 #artistInfo {
-    width: 360px;
-    height: 530px;
+    width: 375px;
+    height: 540px;
     background-color: rgb(14, 14, 68);
     margin-top: 30px;
     margin-left: 15px;
@@ -134,8 +134,8 @@ transition: all 0.3s ease;
     cursor: pointer;
 }
 #artistInfo2 {
-  width: 360px;
-  height: 530px;
+  width: 375px;
+  height: 540px;
   background-color: rgb(14, 14, 68);
   margin-top: 30px;
   margin-left: 10px;
@@ -143,8 +143,8 @@ transition: all 0.3s ease;
   cursor: pointer;;
 }
 #artistInfo3 {
-  width: 360px;
-  height: 530px;
+  width: 375px;
+  height: 540px;
   background-color: rgb(14, 14, 68);
   margin-top: 30px;
   margin-left: 10px;
@@ -153,8 +153,8 @@ transition: all 0.3s ease;
   margin-right: 10px;
 }
 #artistInfo4 {
-  width: 360px;
-  height: 530px;
+  width: 375px;
+  height: 540px;
   background-color: rgb(14, 14, 68);
   margin-top: 30px;
   margin-left: 15px;
@@ -162,8 +162,8 @@ transition: all 0.3s ease;
   cursor: pointer;
 }
 #artistInfo5 {
-  width: 360px;
-  height: 530px;
+  width: 375px;
+  height: 540px;
   background-color: rgb(14, 14, 68);
   margin-top: 30px;
   margin-left: 10px;
@@ -171,8 +171,8 @@ transition: all 0.3s ease;
   cursor: pointer;
 }
 #artistInfo6 {
-  width: 360px;
-  height: 530px;
+  width: 375px;
+  height: 540px;
   background-color: rgb(14, 14, 68);
   margin-top: 30px;
   margin-left: 10px;
@@ -181,8 +181,8 @@ transition: all 0.3s ease;
   margin-right: 10px;
 }
 #artistInfo7 {
-  width: 360px;
-  height: 530px;
+  width: 375px;
+  height: 540px;
   background-color: rgb(14, 14, 68);
   margin-top: 30px;
   margin-left: 15px;
@@ -190,8 +190,8 @@ transition: all 0.3s ease;
   cursor: pointer;
 }
 #artistInfo8 {
-  width: 360px;
-  height: 530px;
+  width: 375px;
+  height: 540px;
   background-color: rgb(14, 14, 68);
   margin-top: 30px;
   margin-left: 10px;
@@ -199,8 +199,8 @@ transition: all 0.3s ease;
   cursor: pointer;
 }
 #artistInfo9 {
-  width: 360px;
-  height: 530px;
+  width: 375px;
+  height: 540px;
   background-color: rgb(14, 14, 68);
   margin-top: 30px;
   margin-left: 10px;
@@ -210,7 +210,7 @@ transition: all 0.3s ease;
 }
 
 .artist_image {
-      width: 350px;
+      width: 340px;
       height: 320px;
       margin-left: 23px;
       margin-top: 25px;
