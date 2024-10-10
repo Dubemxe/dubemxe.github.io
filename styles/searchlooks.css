@@ -1,0 +1,228 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  background-image: url('photos/background_image.jpg');
+  width: 100%;
+  height: 2800px;
+
+
+}
+
+.header {
+  height: 120px;
+  width: 100%;
+  margin-bottom: 110px;
+  text-align: center;
+}
+.sub-title {
+        color: white;
+        font-size: 40px;
+        justify-self: center;
+        font-family: "Archivo Black";
+        margin-top: 45px;
+  }
+.archivo-black-regular {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bubbles {
+  background-color: rgb(20, 20, 82);
+  height: 80px;
+  width: 100%;
+
+}
+#songInfo {
+  background-color: rgb(11, 11, 53);
+  height: 80px;
+  width: 100%;
+}
+.footer {
+  height: 60px;
+  width: 100%;
+}
+#searchQuery {
+  width: 800px;
+  height: 60px;
+  margin-left: 10px;
+  margin-top: 35px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: rgb(250, 239, 239);
+  border: none;
+  border-radius: 18px;
+text-align: center;
+box-shadow:  12px 12px 12px rgba(93, 93, 247, 0.1);
+
+}
+#searchbtn {
+
+  width: 60px;
+  margin-left: 0px;
+  height: 60px;
+  margin-top: 35px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: rgb(240, 233, 233);
+  border: none;
+  border-radius: 19px;
+text-align: center;
+
+}
+.searchimg {
+  width: 25px;
+  height: 25px;
+}
+.songList {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  text-align: end;
+}
+.artistName {
+        color: white;
+        font-family: Arial;
+        font-size: 30px;
+        font-weight: bold;
+}
+.songTitle {
+        color: white;
+        font-family: Arial;
+        font-size: 30px;
+        font-weight: bold;
+        margin-right: auto;
+}
+.musicInfo {
+  background-color: rgb(20, 20, 82);
+  height: 120px;
+  padding-top: 10px;
+  width: 100%;
+  margin-bottom: 3px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.duration {
+        color: white;
+        font-size: 26px;
+        font-weight: bold;
+        margin-left: 220px;
+        align-self: center;
+        margin-right: 27px;
+}
+.albumImage {
+        width: 80px;
+        height: 80px;
+        border-radius: 40px;
+        margin-left: 10px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        margin-right: 40px;
+}
+button .icon {
+        width: 43px;
+        height: 43px;
+  }
+.pre_click {
+        width: 800px;
+        height: 70px;
+}
+
+.content_div {
+    width: 343px;
+    height: 90%;
+    background-color: rgb(14, 14, 68);
+    margin-top: 30px;
+    margin-left: 25px;
+    border-radius: 25px;
+    position: absolute;
+    display: none;
+}
+.pp_img {
+  width: 360px;
+  height: 280px;
+  border-radius: 8px;
+  margin-left: 13px;
+  margin-top: 25px;
+  margin-bottom: 0px;
+}
+.kanit-light {
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.kanit-regular {
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.kanit-medium {
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.kanit-semibold {
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.kanit-bold {
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+p {
+  font-family: "Kanit";
+  color: rgb(113, 151, 151);
+}
+.dp {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 11px;
+  font-size: 20px;
+}
+.dp1 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 11px;
+  font-size: 20px;
+}
+.p1 {
+  font-weight: bold;
+  font-size: 27px;
+  color: azure;
+  margin-top: 0px;
+  margin-left: 9px;
+  margin-bottom: 50px;
+}
+.xicon {
+  height: 35px;
+  width: 35px;
+  }
+.xbtn {
+  background-color:  rgba(0, 0, 0, 0);
+  border: none;
+  margin-top: 15px;
+  padding: 0px;
+  padding-top: 0px;
+  margin-bottom: 255px;
+  cursor: pointer;
+  margin-right: 8px;
+}
+.img_box {
+  display: flex;
+  flex-direction: row;
+  column-gap: 0px;
+}
+  
