@@ -71,8 +71,7 @@ text-align: center;
 box-shadow:  12px 12px 12px rgba(93, 93, 247, 0.1);
 
 }
-#searchbtn {
-
+.searchbtn {
   width: 60px;
   margin-left: 0px;
   height: 60px;
