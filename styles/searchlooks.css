@@ -63,7 +63,10 @@ html, body {
   font-weight: bold;
   background-color: rgb(250, 239, 239);
   border: none;
-  border-radius: 18px;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 0;
 text-align: center;
 box-shadow:  12px 12px 12px rgba(93, 93, 247, 0.1);
 
@@ -78,7 +81,10 @@ box-shadow:  12px 12px 12px rgba(93, 93, 247, 0.1);
   font-weight: bold;
   background-color: rgb(250, 239, 239);
   border: none;
-  border-radius: 19px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 19px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 19px;
 text-align: center;
 
 }
