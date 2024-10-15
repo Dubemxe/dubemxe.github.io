@@ -50,7 +50,7 @@ async function myTop5(artistNames) {
 
     // Convert the entire trackIds array to a string and append it to the URL hash
     const encodedTrackIds = encodeURIComponent(allTrackIds.join(','));
-   window.location.href = `mysearchpage.html#trackIds=${encodedTrackIds}`;
+   window.location.href = `https://jmusic-1xuz.onrender.com/mysearchpage.html#trackIds=${encodedTrackIds}`;
 }
 function toSearchpage() {
         const selectedArtists = [];
