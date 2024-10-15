@@ -6,7 +6,7 @@ body {
 .mycontainer {
   width: 100%;
   margin: 0px;
-  height: 2500px;
+  height: 100vh;
   background-color: rgb(11, 11, 53);
   right: 50%;
   display: flex;
