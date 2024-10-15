@@ -224,6 +224,7 @@ transition: all 0.3s ease;
         margin-left: 20px;
         font-size: 35px;
         font-family: sans-serif;
+        font-weight: bold;
 }
 .followers {
         color: white;
