@@ -198,3 +198,12 @@ getArtistInfo(artistName9)
   .then(({ artistInfoHTML, trackIds }) => {
     artistInfoDiv9.innerHTML = artistInfoHTML;
   });
+
+// for div10
+const artistName10 = 'BigxTha';
+const artistInfoDiv10 = document.getElementById('artistInfo10');
+
+getArtistInfo(artistName10)
+  .then(({ artistInfoHTML, trackIds }) => {
+    artistInfoDiv10.innerHTML = artistInfoHTML;
+  });
