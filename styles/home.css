@@ -204,7 +204,7 @@ margin-top: 30px;
   font-style: normal;
 }
              
-@media (max-width: 576px) {
+@media (max-width: 1076px) {
   .p1 {
     color: whitesmoke;
     font-size: 42px;
