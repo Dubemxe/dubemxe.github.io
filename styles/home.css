@@ -1,7 +1,7 @@
-body {
+body, html {
   font-family: Arial;
   font-size: 35px;
-
+  height: 100%;
 }
 .mycontainer {
   width: 100%;
