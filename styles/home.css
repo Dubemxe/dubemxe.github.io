@@ -214,6 +214,12 @@ margin-top: 30px;
     font-size: 24px;
 
     }
+    .pic1 {
+      display: none;
+    }
+     .pic2 {
+      display: none;
+    }
     .ham_menu {
       width: 40px;
       height: 40px;
@@ -272,5 +278,9 @@ margin-top: 30px;
     }
     .my_header {
         grid-template-columns: 5.3fr  1.2fr;
+    }
+    .select_boxes {
+      display: grid;
+      grid-template-columns: 0.5fr 0.5fr 0.5fr;
     }
 }
