@@ -42,7 +42,6 @@ body, html {
   color: rgb(224, 187, 22);
   font-size: 28px;
   font-weight: bold;
-  font-family: 'Lucida Sans Regular';
   margin-left: 50px;
 }
 .p3 {
@@ -283,5 +282,8 @@ margin-top: 30px;
     }
     .select_boxes {
       grid-template-columns: 0.5fr 0.5fr 0.5fr;
+    }
+    .round {
+      margin-top: 12px;
     }
 }
