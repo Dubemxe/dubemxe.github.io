@@ -73,21 +73,27 @@ body {
 }
 
 .pic1 {
-  width: 60px;
-  height: 60px;
+  width: 65px;
+  height: 65px;
   margin-top: 28px;
   margin-left: 10px;
   cursor: pointer;
 }
 .pic2 {
+  width: 65px;
+  height: 65px;
+  margin-top: 28px;
+  margin-right: 0px;
+  cursor: pointer;
+}
+.ham_menu {
   width: 60px;
   height: 60px;
   margin-top: 28px;
-  margin-right: 20px;
+  margin-left: 10px;
   cursor: pointer;
+  display: none;
 }
-
-
 .butn {
   height: 65px;
   width: 230px;
@@ -124,89 +130,14 @@ transition: all 0.3s ease;
   box-shadow: 32px 32px 32px 32px rgba(29, 29, 255, 0.1);;
 
 }
-#artistInfo {
+.inboxes {
     width: 400px;
     height: 540px;
     background-color: rgb(14, 14, 68);
-    margin-top: 30px;
+    margin-top: 10px;
     margin-left: 15px;
     border-radius: 25px;
     cursor: pointer;
-}
-#artistInfo2 {
-  width: 400px;
-  height: 540px;
-  background-color: rgb(14, 14, 68);
-  margin-top: 30px;
-  margin-left: 10px;
-  border-radius: 25px;
-  cursor: pointer;;
-}
-#artistInfo3 {
-  width: 400px;
-  height: 540px;
-  background-color: rgb(14, 14, 68);
-  margin-top: 30px;
-  margin-left: 10px;
-  border-radius: 25px;
-  cursor: pointer;
-  margin-right: 10px;
-}
-#artistInfo4 {
-  width: 400px;
-  height: 540px;
-  background-color: rgb(14, 14, 68);
-  margin-top: 30px;
-  margin-left: 15px;
-  border-radius: 25px;
-  cursor: pointer;
-}
-#artistInfo5 {
-  width: 400px;
-  height: 540px;
-  background-color: rgb(14, 14, 68);
-  margin-top: 30px;
-  margin-left: 10px;
-  border-radius: 25px;
-  cursor: pointer;
-}
-#artistInfo6 {
-  width: 400px;
-  height: 540px;
-  background-color: rgb(14, 14, 68);
-  margin-top: 30px;
-  margin-left: 10px;
-  border-radius: 25px;
-  cursor: pointer;
-  margin-right: 10px;
-}
-#artistInfo7 {
-  width: 400px;
-  height: 540px;
-  background-color: rgb(14, 14, 68);
-  margin-top: 30px;
-  margin-left: 15px;
-  border-radius: 25px;
-  cursor: pointer;
-}
-#artistInfo8 {
-  width: 400px;
-  height: 540px;
-  background-color: rgb(14, 14, 68);
-  margin-top: 30px;
-  margin-left: 10px;
-  border-radius: 25px;
-  cursor: pointer;
-}
-#artistInfo9 {
-  width: 400px;
-  height: 540px;
-  background-color: rgb(14, 14, 68);
-  margin-top: 30px;
-  margin-left: 10px;
-  border-radius: 25px;
-  cursor: pointer;
-  margin-right: 10px;
 }
 
 .artist_image {
@@ -272,3 +203,74 @@ margin-top: 30px;
   font-style: normal;
 }
              
+@media (max-width: 576px) {
+  .p1 {
+    color: whitesmoke;
+    font-size: 42px;
+    margin-right: 0px;
+    }
+  .p2 {
+    margin-left: 29px;
+    font-size: 24px;
+
+    }
+    .ham_menu {
+      width: 40px;
+      height: 40px;
+      margin-left: 50px;
+      display: block;
+    }
+    .p3 {
+      font-size: 35px;
+    }
+    .checker {
+      width: 20px;
+      height: 20px;
+      margin-left: 162px;
+      margin-top: 8px;
+    }
+    .inboxes {
+      width: 180px;
+      height: 310px;
+      background-color: rgb(14, 14, 68);
+      margin-top: 5px;
+      margin-left: 8px;
+      border-radius: 15px;
+      cursor: pointer;
+    }
+    .artist_image {
+      width: 160px;
+      height: 200px;
+      border-radius: 6px;
+      margin-left: 9px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .name {
+      margin-top: 3px;
+      margin-bottom: 8px;
+      margin-left: 5px;
+      font-size: 17px;
+      font-weight: bold;
+    }
+    .followers {
+      margin-left: 10px;
+      margin-top: 6px;
+      font-size: 12px;
+    }
+    .rating {
+      margin-left: 10px;
+      margin-top: 2px;
+      font-size: 12px;
+    }
+    .butn {
+      height: 55px;
+      width: 220px;
+    }
+    .mycontainer {
+      height: 1500px;
+    }
+    .my_header {
+        grid-template-columns: 5.3fr  1.2fr;
+    }
+}
