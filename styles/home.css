@@ -206,7 +206,7 @@ margin-top: 30px;
 #artistInfo10 {
   display: none;
 }
-@media (max-width: 430px) {
+@media (max-width: 576px) {
   .p1 {
     color: whitesmoke;
     font-size: 42px;
