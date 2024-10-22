@@ -9,8 +9,6 @@ html, body {
   background-image: url('images/background_image.jpg');
   width: 100%;
   height: 2800px;
-
-
 }
 
 .header {
@@ -239,8 +237,11 @@ p {
 }
   
 @media (max-width: 576px) {
+  .p1 {
+    margin-top: 13px;
+  }
   #searchQuery {
-    margin-left: 50px;
+    margin-left: 27px;
     width: 550px;
   }
   
@@ -249,18 +250,31 @@ p {
     width: 40px;
   }
   .content_div {
-    height: 620px;
-    width: 500px;
+    height: 300px;
+    width: 70%px;
   }
   .searchbtn {
-    width: 63px;
+    width: 62px;
   }
   .sub-title {
     margin-bottom: 12px;
+    font-size: 23px;
   }
   .pp_img {
-  width: 400px;
-  height: 330px;
+  width: 200px;
+  height: 300px;
   }
+  .artistName {
+    font-size: 15px;
+  }
+  .songTitle {
+    font-size: 15px;
+  }
+  .duration {
+        font-size: 13px;
+        margin-left: 20px;
+        margin-right: 11px;
+}
+
 }
   
