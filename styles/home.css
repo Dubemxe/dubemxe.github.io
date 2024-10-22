@@ -5,7 +5,7 @@ body, html {
 .mycontainer {
   width: 100%;
   margin: 0px;
-  height: 3050px;
+  height: 2700px;
   background-color: rgb(11, 11, 53);
   right: 50%;
   display: flex;
@@ -209,7 +209,7 @@ margin-top: 30px;
 @media (max-width: 576px) {
   .p1 {
     color: whitesmoke;
-    font-size: 42px;
+    font-size: 30px;
     margin-right: 0px;
     }
   .p2 {
@@ -278,7 +278,7 @@ margin-top: 30px;
       width: 220px;
     }
     .mycontainer {
-      height: 1500px;
+      height: 1620px;
     }
     .my_header {
         grid-template-columns: 5.3fr  1.2fr;
