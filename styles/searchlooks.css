@@ -239,7 +239,7 @@ p {
 }
   
 @media (max-width: 576px) {
-  .searchQuery {
+  #searchQuery {
     margin-left: 50px;
     width: 550px;
   }
