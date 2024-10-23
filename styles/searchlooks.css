@@ -292,6 +292,12 @@ p {
         margin-left: 0px;
         margin-right: 0px;
         border-radius: 10px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        -webkit-line-clamp: 2; /* Number of lines to show */
+        line-clamp: 2;
+        /*height: 3em;*/
   }
   .search_div {
         margin-left: 10px;
