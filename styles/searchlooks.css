@@ -97,6 +97,7 @@ text-align: center;
 }
 .artistName {
         color: white;
+        align-self: center;
         font-family: Arial;
         font-size: 30px;
         font-weight: bold;
@@ -106,6 +107,7 @@ text-align: center;
         font-family: Arial;
         font-size: 30px;
         font-weight: bold;
+        align-self: center;
         margin-right: auto;
 }
 .musicInfo {
@@ -242,7 +244,7 @@ p {
   }
   #searchQuery {
     margin-left: 5px;
-    width: 450px;
+    width: 370px;
     height: 45px;
   }
   
@@ -255,7 +257,7 @@ p {
     width: 300px;
   }
   .searchbtn {
-    width: 47px;
+    width: 57px;
     height: 45px;
   }
   .sub-title {
@@ -263,7 +265,7 @@ p {
     font-size: 23px;
   }
   .pp_img {
-  width: 283px;
+  width: 272px;
   height: 300px;
   }
   .artistName {
@@ -287,6 +289,7 @@ p {
   }
   .musicInfo {
         height: 75px;
+        width: 570px;
         margin-left: 0px;
         margin-right: 0px;
   }
