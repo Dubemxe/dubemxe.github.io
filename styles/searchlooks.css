@@ -292,14 +292,9 @@ p {
         margin-left: 0px;
         margin-right: 0px;
         border-radius: 10px;
-        display: -webkit-box;
-        -webkit-box-orient: horizontal;
+        white-space: nowrap; /* Prevent text from wrapping onto a new line */
         overflow: hidden;
-        -webkit-line-clamp: 2; /* Number of lines to show */
-        line-clamp: 2;
-        word-wrap: break-word;
-        white-space: normal; 
-        /*height: 3em;*/
+        text-overflow: ellipsis; 
   }
   .search_div {
         margin-left: 22px;
