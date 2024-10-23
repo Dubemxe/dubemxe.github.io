@@ -244,7 +244,7 @@ p {
   }
   #searchQuery {
     margin-left: 5px;
-    width: 370px;
+    width: 310px;
     height: 45px;
   }
   
@@ -253,7 +253,7 @@ p {
     width: 40px;
   }
   .content_div {
-    height: 85%;
+    height: 79%;
     width: 300px;
   }
   .searchbtn {
@@ -265,7 +265,7 @@ p {
     font-size: 23px;
   }
   .pp_img {
-  width: 272px;
+  width: 262px;
   height: 300px;
   }
   .artistName {
@@ -289,7 +289,6 @@ p {
   }
   .musicInfo {
         height: 75px;
-        width: 570px;
         margin-left: 0px;
         margin-right: 0px;
   }
