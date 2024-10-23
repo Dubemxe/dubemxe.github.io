@@ -241,8 +241,8 @@ p {
     margin-top: 13px;
   }
   #searchQuery {
-    margin-left: 12px;
-    width: 550px;
+    margin-left: 5px;
+    width: 450px;
     height: 45px;
   }
   
@@ -251,7 +251,7 @@ p {
     width: 40px;
   }
   .content_div {
-    height: 70%;
+    height: 100%;
     width: 300px;
   }
   .searchbtn {
@@ -284,5 +284,7 @@ p {
   }
   .musicInfo {
         height: 75px;
+        margin-left: 0px;
+        margin-right: 0px;
   }
 }
