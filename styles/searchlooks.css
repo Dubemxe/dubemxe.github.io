@@ -244,7 +244,7 @@ p {
   }
   #searchQuery {
     margin-left: 5px;
-    width: 310px;
+    width: 285px;
     height: 45px;
   }
   
@@ -265,7 +265,7 @@ p {
     font-size: 23px;
   }
   .pp_img {
-  width: 262px;
+  width: 250px;
   height: 300px;
   }
   .artistName {
@@ -291,6 +291,7 @@ p {
         height: 75px;
         margin-left: 0px;
         margin-right: 0px;
+        border-radius: 10px;
   }
   .search_div {
         margin-left: 10px;
