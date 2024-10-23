@@ -293,7 +293,7 @@ p {
         margin-right: 0px;
         border-radius: 10px;
         display: -webkit-box;
-        -webkit-box-orient: vertical;
+        -webkit-box-orient: horizontal;
         overflow: hidden;
         -webkit-line-clamp: 2; /* Number of lines to show */
         line-clamp: 2;
