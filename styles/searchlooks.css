@@ -297,9 +297,11 @@ p {
         overflow: hidden;
         -webkit-line-clamp: 2; /* Number of lines to show */
         line-clamp: 2;
+        word-wrap: break-word;
+        white-space: normal; 
         /*height: 3em;*/
   }
   .search_div {
-        margin-left: 10px;
+        margin-left: 22px;
   }
 }
