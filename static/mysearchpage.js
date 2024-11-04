@@ -205,6 +205,7 @@ window.onload = function() {
 
     const resultsContainer = document.getElementById('songList');
     searchResults.forEach((track, index) => {
+        const artists = track.artists.map(artist => artist.name).join(', ');
         const trackHTML = `
                  <div class="musicInfo" onclick="getAudio('${track.preview_url}')">
         <img src="${track.album.images[0].url}" alt="${track.name}" class="albumImage" id="popup_image${index}" onclick="popupDiv(${index})">
