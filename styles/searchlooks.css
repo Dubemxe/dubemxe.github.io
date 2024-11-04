@@ -55,7 +55,7 @@ html, body {
 #searchQuery {
   width: 730px;
   height: 60px;
-  margin-left: 200px;
+  margin-left: 170px;
   margin-top: 35px;
   font-size: 20px;
   font-weight: bold;
@@ -72,7 +72,7 @@ box-shadow:  12px 12px 12px rgba(93, 93, 247, 0.1);
 .searchbtn {
   width: 60px;
   margin-left: 0px;
-  height: 62px;
+  height: 61px;
   margin-top: 35px;
   font-size: 20px;
   font-weight: bold;
