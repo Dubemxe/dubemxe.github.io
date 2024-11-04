@@ -13,7 +13,9 @@ async function searchSong_onpage() {
         if (!response.ok) {
             throw new Error('Failed to search for the song'); 
         }
-
+        // Store the query in sessionStorage to use on the results page
+        sessionStorage.setItem('searchQuery', query);
+        
         const data = await response.json();
          const trackItems = data.tracks.items;
 
