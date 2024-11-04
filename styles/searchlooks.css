@@ -258,7 +258,7 @@ p {
   }
   .searchbtn {
     width: 57px;
-    height: 45px;
+    height: 55px;
   }
   .sub-title {
     margin-bottom: 12px;
@@ -292,6 +292,8 @@ p {
         margin-left: 0px;
         margin-right: 0px;
         border-radius: 10px;
+  }
+  .songTitle {
         white-space: nowrap; /* Prevent text from wrapping onto a new line */
         overflow: hidden;
         text-overflow: ellipsis; 
