@@ -115,7 +115,7 @@ async function getTrackIdByArtist(artistName) {
 
 document.getElementById('searchQuery').addEventListener('keydown', function(event) {
   if (event.key === 'Enter') {
-           document.getElementById('searchbtn').click();  // Trigger search button click
+           document.getElementById('sBtn').click();  // Trigger search button click
   }
 });
 
