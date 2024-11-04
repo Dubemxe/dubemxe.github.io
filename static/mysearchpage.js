@@ -49,7 +49,7 @@ async function searchSong() {
          // Store the search results in sessionStorage
         sessionStorage.setItem('searchResults', JSON.stringify(trackItems));
              // Redirect to the results page
-        window.location.href = 'search_results.html';
+        window.location.href = 'search_results.html';/*
         const songListHTML = trackItems.map((track, index) =>  {
             const artists = track.artists.map(artist => artist.name).join(', ');
             const trackHTML = `
@@ -74,7 +74,7 @@ async function searchSong() {
           return trackHTML;
         }).join('');
 
-        document.getElementById('songList').innerHTML = songListHTML;
+        document.getElementById('songList').innerHTML = songListHTML;*/
 
         } catch (error) {
                 console.error('Error searching for the song:', error);
