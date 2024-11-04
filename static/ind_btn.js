@@ -5,6 +5,8 @@ async function searchSong_onpage() {
             console.log('Please enter a song title');
            return;
         }
+        document.getElementById('searchMessage').textContent = `Here's the results for "${query}"`;
+        
         // Personal nocodeapi url
         const searchUrl = `https://v1.nocodeapi.com/joppa1/spotify/wnTxKuZlZRgMplPX/search?q=${encodeURIComponent(query)}&type=track`;
 
@@ -13,9 +15,7 @@ async function searchSong_onpage() {
         if (!response.ok) {
             throw new Error('Failed to search for the song'); 
         }
-        // Store the query in sessionStorage to use on the results page
-        sessionStorage.setItem('searchQuery', query);
-        
+              
         const data = await response.json();
          const trackItems = data.tracks.items;
 
@@ -53,11 +53,3 @@ async function searchSong_onpage() {
                 console.error('Error searching for the song:', error);
     }
 }
-
- // Retrieve the query from sessionStorage
-    const searchQuerpy = sessionStorage.getItem('searchQuery');
-
-    // Display the message on the results page
-    if (searchQuerpy) {
-        document.getElementById('searchMessage').textContent = `Here's the results for "${searchQuerpy}"`;
-    }
