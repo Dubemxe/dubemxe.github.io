@@ -203,7 +203,7 @@ window.onload = function() {
         return;
     }
 
-    const resultsContainer = document.getElementById('musicList');
+    const resultsContainer = document.getElementById('songList');
     searchResults.forEach(track => {
         const trackHTML = `
             <div class="musicInfo">
