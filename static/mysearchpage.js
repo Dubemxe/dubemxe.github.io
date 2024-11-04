@@ -28,12 +28,12 @@ async function searchSong() {
            return;
         }
         // Personal nocodeapi url
-        const searchUrl = `https://v1.nocodeapi.com/aura1/spotify/oFMqKRnEAltNmPtG/search?q=${encodeURIComponent(query)}&type=track`;
+        const searchUrl = `https://v1.nocodeapi.com/joppa1/spotify/wnTxKuZlZRgMplPX/search?q=${encodeURIComponent(query)}&type=track`;
 
         const response = await fetch(searchUrl);
 
         if (!response.ok) {
-            throw new Error('Failed to search for the song');
+            throw new Error('Failed to search for the song'); 
         }
 
         const data = await response.json();
@@ -43,6 +43,10 @@ async function searchSong() {
             console.log('No songs found');
             return;
         }
+         // Store the search results in sessionStorage
+        sessionStorage.setItem('searchResults', JSON.stringify(trackItems));
+             // Redirect to the results page
+        window.location.href = 'search_results.html';
         const songListHTML = trackItems.map((track, index) =>  {
             const artists = track.artists.map(artist => artist.name).join(', ');
             const trackHTML = `
@@ -189,4 +193,24 @@ if (trackIds.length > 0) {
     // Use the trackIds to fetch song information
     console.log(trackIds);
     getSongInform(trackIds);
+}
+
+window.onload = function() {
+    const searchResults = JSON.parse(sessionStorage.getItem('searchResults'));
+
+    if (!searchResults) {
+        console.log('No search results found');
+        return;
+    }
+
+    const resultsContainer = document.getElementById('musicList');
+    searchResults.forEach(track => {
+        const trackHTML = `
+            <div class="musicInfo">
+                <img src="${track.album.images[0].url}" alt="${track.name}">
+                <p>${track.name} by ${track.artists.map(artist => artist.name).join(', ')}</p>
+            </div>
+        `;
+        resultsContainer.innerHTML += trackHTML;
+    });
 }
