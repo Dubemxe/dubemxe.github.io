@@ -55,9 +55,9 @@ async function searchSong_onpage() {
 }
 
  // Retrieve the query from sessionStorage
-    const searchQuery = sessionStorage.getItem('searchQuery');
+    const searchQuerpy = sessionStorage.getItem('searchQuery');
 
     // Display the message on the results page
-    if (searchQuery) {
-        document.getElementById('searchMessage').textContent = `Here's the results for "${searchQuery}"`;
+    if (searchQuerpy) {
+        document.getElementById('searchMessage').textContent = `Here's the results for "${searchQuerpy}"`;
     }
