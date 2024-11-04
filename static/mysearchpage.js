@@ -27,6 +27,9 @@ async function searchSong() {
             console.log('Please enter a song title');
            return;
         }
+        // Store the query in sessionStorage to use on the results page
+        sessionStorage.setItem('searchQuery', query);
+        
         // Personal nocodeapi url
         const searchUrl = `https://v1.nocodeapi.com/joppa1/spotify/wnTxKuZlZRgMplPX/search?q=${encodeURIComponent(query)}&type=track`;
 
@@ -228,3 +231,10 @@ window.onload = function() {
         resultsContainer.innerHTML += trackHTML;
     });
 }
+ // Retrieve the query from sessionStorage
+    const searchQuery = sessionStorage.getItem('searchQuery');
+
+    // Display the message on the results page
+    if (searchQuery) {
+        document.getElementById('searchMessage').textContent = `Here's the results for "${searchQuery}"`;
+    }
