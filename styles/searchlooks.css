@@ -55,6 +55,15 @@ html, body {
 .back_img {
   margin-top: 35px;
   margin-left: 25px;
+  cursor: pointer;
+  box-shadow:  12px 12px 12px rgba(20, 20, 82, 0.1);
+  transition: all 0.3s ease;
+}
+
+.butn:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+
 }
 #searchQuery {
   width: 730px;
