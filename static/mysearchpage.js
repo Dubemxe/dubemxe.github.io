@@ -1,3 +1,6 @@
+function changeUrl(url) {
+  window.location.href = url;
+  }
 let currentSong = null; //stores the current song being played
 
 function playAudio(url) {
