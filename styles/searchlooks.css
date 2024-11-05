@@ -54,7 +54,7 @@ html, body {
 }
 .back_img {
   margin-top: 35px;
-  margin-left: 95px;
+  margin-left: 35px;
   width: 65px;
   height: 65px;
   cursor: pointer;
@@ -124,6 +124,9 @@ text-align: center;
         font-weight: bold;
         align-self: center;
         margin-right: auto;
+         white-space: nowrap; /* Prevent text from wrapping onto a new line */
+        overflow: hidden;
+        text-overflow: ellipsis; 
 }
 .musicInfo {
   background-color: rgb(20, 20, 82);
