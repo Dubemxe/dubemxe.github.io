@@ -157,8 +157,8 @@ try {
         </div>
         <p class="artistName">${track.artists.map(artist => artist.name).join(', ')} </p>
         <p class="songTitle"> - ${track.name}</p>
+        ${track.preview_url ? `<p> </p>` : `<p class="noPreview">No Audio Available</p>`}
         <p class="duration">${msToTime(track.duration_ms)}</p>
-        ${track.preview_url ? `<p> </p>` : `<p class="noPreview">No Preview Available</p>`}
         </div>
         `;
         document.getElementById('songList').innerHTML += songHTML;
