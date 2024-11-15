@@ -155,9 +155,10 @@ try {
         <p class="dp">Released on ${track.album.release_date}</p>
         <p class="dp">From the ${track.album.name} Album</p>
         </div>
+        <div class="artistsDets">
         <p class="songTitle">${track.name}</p>
         <p class="artistName">${track.artists.map(artist => artist.name).join(', ')} . ${track.album.name}</p>
-        <p class="duration">${msToTime(track.duration_ms)}</p>
+        <p class="duration">${msToTime(track.duration_ms)}</p> </div>
         ${track.preview_url ? `<p> </p>` : `<p class="noPreview">No Audio Available</p>`}
         </div>
         `;
