@@ -123,13 +123,14 @@ html, body {
         color: white;
         align-self: center;
         font-family: Arial;
-        font-size: 30px;
-        font-weight: bold;
+        font-size: 17px;
+        font-weight: light;
 }
 .artistsDetails {
   dispaly: flex;
   flex-direction: column;
-  row-gap: 3px;
+  row-gap: 1px;
+  margin-bottom: 0px;
 }
 .songTitle {
         color: white;
@@ -138,13 +139,13 @@ html, body {
         font-weight: bold;
         align-self: center;
         margin-right: auto;
-         white-space: nowrap; /* Prevent text from wrapping onto a new line */
+        white-space: nowrap; /* Prevent text from wrapping onto a new line */
         overflow: hidden;
         text-overflow: ellipsis; 
 }
 .noPreview {
     margin-right: 27px;
-    font-size: 20px;
+    font-size: 28px;
 }
 .musicInfo {
   background-color: black;
@@ -161,7 +162,7 @@ html, body {
         color: white;
         font-size: 26px;
         font-weight: bold;
-        margin-left: 220px;
+        margin-left: 170px;
         align-self: center;
         margin-right: 27px;
 }
