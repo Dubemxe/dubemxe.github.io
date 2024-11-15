@@ -126,6 +126,11 @@ html, body {
         font-size: 30px;
         font-weight: bold;
 }
+.artistsDetails {
+  dispaly: flex;
+  flex-direction: column;
+  row-gap: 3px;
+}
 .songTitle {
         color: white;
         font-family: Arial;
