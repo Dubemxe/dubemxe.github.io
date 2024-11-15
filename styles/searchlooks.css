@@ -142,6 +142,10 @@ html, body {
         overflow: hidden;
         text-overflow: ellipsis; 
 }
+.noPreview {
+    margin-right: 27px;
+    font-size: 20px;
+}
 .musicInfo {
   background-color: black;
   height: 120px;
