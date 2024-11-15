@@ -177,7 +177,7 @@ button .icon {
 .content_div {
     width: 343px;
     height: 90%;
-    background-color: rgba(26, 25, 25, 0.952);
+    background-color: rgb(26, 25, 25);
     margin-top: 30px;
     margin-left: 25px;
     border-radius: 25px;
