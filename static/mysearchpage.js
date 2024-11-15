@@ -145,7 +145,7 @@ try {
         const songHTML = `
          <div class="musicInfo">
         <img src="${track.album.images[0].url}" alt="${track.name}" class="albumImage" id="popup_image${index}" onclick="popupDiv(${index})">
-        <div onclick="getAudio('${track.preview_url}')">
+        <div onclick="getAudio('${track.preview_url}')" class="musicInfo">
         <div id="content_div${index}" class="content_div">
         <div class="img_box">
         <img src="${track.album.images[0].url}" alt="${track.name}" class="pp_img">
