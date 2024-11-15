@@ -12,17 +12,21 @@ html, body {
 }
 
 .header {
-  height: 120px;
+  height: 240px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 58px;
   width: 100%;
-  margin-bottom: 110px;
-  text-align: center;
+  background-image: url('styles/images/Banner\ Art\ update.png');
+  
 }
 .sub-title {
         color: white;
         font-size: 40px;
-        justify-self: center;
         font-family: "Archivo Black";
-        margin-top: 45px;
+        font-weight: bold;
+        margin-left: 30px;
+        margin-top: 110px;
   }
 .archivo-black-regular {
   font-family: "Archivo Black", sans-serif;
@@ -37,7 +41,7 @@ html, body {
 
 }
 #songInfo {
-  background-color: rgb(11, 11, 53);
+  background-color: black;
   height: 80px;
   width: 100%;
 }
@@ -53,13 +57,12 @@ html, body {
   margin-left: 40px;
 }
 .back_img {
-  margin-top: 35px;
-  margin-left: 35px;
-  margin-right: 40px;
-  width: 65px;
-  height: 65px;
+  margin-top: 25px;
+  margin-left: 20px;
+  margin-right: 0px;
+  width: 50px;
+  height: 50px;
   cursor: pointer;
-  box-shadow:  12px 12px 12px rgba(20, 20, 82, 0.1);
   transition: all 0.3s ease;
 }
 
@@ -69,37 +72,42 @@ html, body {
 
 }
 #searchQuery {
-  width: 730px;
-  height: 60px;
-  margin-left: 95px;
-  margin-top: 35px;
+  width: 310px;
+  color: white;
+  height: 50px;
+  margin-left: 0px;
+  margin-top: 0px;
   font-size: 20px;
-  font-weight: bold;
-  background-color: rgb(250, 239, 239);
-  border: none;
-  border-top-left-radius: 18px;
-  border-top-right-radius: 0;
-  border-bottom-left-radius: 18px;
-  border-bottom-right-radius: 0;
-text-align: center;
-box-shadow:  12px 12px 12px rgba(93, 93, 247, 0.1);
-
+  background-color: rgba(8, 8, 8, 0.219);
+  border-color: white;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-top-left-radius: 28px;
+  border-bottom-left-radius: 28px;
+  text-align: center;
+  margin-right: 0px;
+  border-style: solid;
+  border-right-color: rgba(250, 239, 239, 0.019);
+}
+#searchQuery::placeholder {
+  color: white;
+  opacity: 1;
 }
 .searchbtn {
-  width: 60px;
+  width: 65px;
   margin-left: 0px;
-  height: 61.5px;
-  margin-top: 35px;
-  font-size: 20px;
-  font-weight: bold;
-  background-color: rgb(250, 239, 239);
-  border: none;
+  height: 55.5px;
+  margin-top: 0px;
   border-top-left-radius: 0px;
-  border-top-right-radius: 19px;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 19px;
-text-align: center;
-
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  background-color: rgba(8, 8, 8, 0.219);
+  border-color: white;
+  border-style: solid;
+  text-align: center;
+  border-left-color: rgba(250, 239, 239, 0.007);
+  
 }
 .searchimg {
   width: 31px;
