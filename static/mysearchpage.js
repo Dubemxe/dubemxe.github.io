@@ -143,8 +143,9 @@ try {
 
     data.tracks.forEach((track, index) => {
         const songHTML = `
-         <div class="musicInfo" onclick="getAudio('${track.preview_url}')">
+         <div class="musicInfo">
         <img src="${track.album.images[0].url}" alt="${track.name}" class="albumImage" id="popup_image${index}" onclick="popupDiv(${index})">
+        <div onclick="getAudio('${track.preview_url}')">
         <div id="content_div${index}" class="content_div">
         <div class="img_box">
         <img src="${track.album.images[0].url}" alt="${track.name}" class="pp_img">
@@ -155,11 +156,13 @@ try {
         <p class="dp">Released on ${track.album.release_date}</p>
         <p class="dp">From the ${track.album.name} Album</p>
         </div>
-        <p class="artistName">${track.artists.map(artist => artist.name).join(', ')} </p>
-        <p class="songTitle"> - ${track.name}</p>
-        ${track.preview_url ? `<p> </p>` : `<p class="noPreview">No Audio Available</p>`}
-        <p class="duration">${msToTime(track.duration_ms)}</p>
+        <div class="artistsDetails">
+        <p class="songTitle">${track.name}</p>
+        <p class="artistName">${track.artists.map(artist => artist.name).join(', ')} . ${track.album.name}</p>
         </div>
+        <p class="duration">${msToTime(track.duration_ms)}</p>
+        ${track.preview_url ? `<p> </p>` : `<p class="noPreview">No Audio Available</p>`}
+        </div></div>
         `;
         document.getElementById('songList').innerHTML += songHTML;
     });
