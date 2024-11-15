@@ -24,7 +24,7 @@ html, body {
 .sub-title {
         color: white;
         font-size: 40px;
-        font-weight: 700;
+        font-weight: 500;
         margin-left: 15px;
         margin-top: 85px;
   }
@@ -216,6 +216,12 @@ button .icon {
   font-family: 'Basis Grotesque';
   src: url('/fonts/BasisGrotesqueArabicPro-Bold.ttf') format('truetype');
   font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Basis Grotesque';
+  src: url('/fonts/BasisGrotesqueArabicPro-Medium.ttf') format('truetype');
+  font-weight: 500;
   font-style: normal;
 }
 p {
