@@ -127,9 +127,6 @@ html, body {
         font-weight: light;
 }
 .artistsDetails {
-  display: flex;
-  flex-direction: column;
-  row-gap: 1px;
   margin-bottom: 0px;
   margin-top: 0px;
   margin-left: 4px;
