@@ -131,6 +131,8 @@ html, body {
   flex-direction: column;
   row-gap: 1px;
   margin-bottom: 0px;
+  margin-top: 0px;
+  margin-left: 4px;
 }
 .songTitle {
         color: white;
