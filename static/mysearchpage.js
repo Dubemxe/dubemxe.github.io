@@ -143,9 +143,8 @@ try {
 
     data.tracks.forEach((track, index) => {
         const songHTML = `
-         <div class="musicInfo">
+         <div class="musicInfo" onclick="getAudio('${track.preview_url}')" class="musicInfo">
         <img src="${track.album.images[0].url}" alt="${track.name}" class="albumImage" id="popup_image${index}" onclick="popupDiv(${index})">
-        <div onclick="getAudio('${track.preview_url}')" class="musicInfo">
         <div id="content_div${index}" class="content_div">
         <div class="img_box">
         <img src="${track.album.images[0].url}" alt="${track.name}" class="pp_img">
@@ -162,7 +161,7 @@ try {
         </div>
         <p class="duration">${msToTime(track.duration_ms)}</p>
         ${track.preview_url ? `<p> </p>` : `<p class="noPreview">No Audio Available</p>`}
-        </div></div>
+        </div>
         `;
         document.getElementById('songList').innerHTML += songHTML;
     });
