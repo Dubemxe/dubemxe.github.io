@@ -148,6 +148,10 @@ try {
         <div id="content_div${index}" class="content_div">
         <div class="img_box">
         <img src="${track.album.images[0].url}" alt="${track.name}" class="pp_img">
+        <div class="artistsDets">
+        <p class="songTitle">${track.name}</p>
+        <p class="artistName">${track.artists.map(artist => artist.name).join(', ')} . ${track.album.name}</p>
+        <p class="duration">${msToTime(track.duration_ms)}</p> </div>
         <button class="xbtn" onclick="popupDiv(${index})"><img src="styles/images/icons8-x-50 white.png" class="xicon"></button>
         </div>
         <p class="p1">${track.name}</p>
@@ -155,11 +159,7 @@ try {
         <p class="dp">Released on ${track.album.release_date}</p>
         <p class="dp">From the ${track.album.name} Album</p>
         </div>
-        <div class="artistsDets">
-        <p class="songTitle">${track.name}</p>
-        <p class="artistName">${track.artists.map(artist => artist.name).join(', ')} . ${track.album.name}</p>
-        <p class="duration">${msToTime(track.duration_ms)}</p> </div>
-        ${track.preview_url ? `<p> </p>` : `<p class="noPreview">No Audio Available</p>`}
+         ${track.preview_url ? `<p> </p>` : `<p class="noPreview">No Audio Available</p>`}
         </div>
         `;
         document.getElementById('songList').innerHTML += songHTML;
