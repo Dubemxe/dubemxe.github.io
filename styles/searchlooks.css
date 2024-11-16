@@ -145,6 +145,7 @@ html, body {
   margin-bottom: 1px;
   display: flex;
   flex-direction: row;
+  font-family: "Manrope";
   column-gap: 87px;
   /*justify-content: space-between;*/
   cursor: pointer;
@@ -153,7 +154,7 @@ html, body {
         color: white;
         font-size: 26px;
         font-weight: bold;
-        margin-left: 170px;
+        margin-left: 0px;
         align-self: center;
         margin-right: 27px;
 }
@@ -183,6 +184,7 @@ button .icon {
     margin-left: 25px;
     border-radius: 25px;
     position: absolute;
+    left: 10%;
     display: none;
 }
 .pp_img {
