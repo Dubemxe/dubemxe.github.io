@@ -31,7 +31,25 @@
   </li>
     </ul>
 
-  <img src="images/menu.png" class="pic2">
+  <img src="images/menu.png" class="pic2" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar">
+     <!-- Offcanvas Sidebar -->
+  <div class="offcanvas offcanvas-end" id="sidebar" tabindex="-1" aria-labelledby="sidebarLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="sidebarLabel">JMusic</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <!-- Dropdown Menu -->
+      <ul class="list-group">
+        <p class="section">Light Mode  <img src="styles/images/icons8-light-24.png" class="light-pic"></p>
+        <div class="section"><a  href="#">About Us</a></div>
+        <div class="section"><a  href="#">Support</a></div>
+        <div class="section"><a  href="#">Report a problem</a></div>
+
+      </ul>
+    </div>
+   </div>
+    
 </div>
 <div class="round">
 <p class="p3">Select preferred Artists</p></div>
