@@ -145,6 +145,7 @@ html, body {
   margin-bottom: 1px;
   display: flex;
   flex-direction: row;
+  column-gap: 87px;
   /*justify-content: space-between;*/
   cursor: pointer;
 }
