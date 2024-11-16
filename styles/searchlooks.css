@@ -128,7 +128,6 @@ html, body {
         font-size: 30px;
         font-weight: bold;
         align-self: center;
-        margin-right: auto;
         white-space: nowrap; /* Prevent text from wrapping onto a new line */
         overflow: hidden;
         text-overflow: ellipsis; 
@@ -153,7 +152,6 @@ html, body {
 .artistsDets {
   display: flex;
   flex-direction: column;
-  row-gap: 0px;
 }
 .duration {
         color: white;
