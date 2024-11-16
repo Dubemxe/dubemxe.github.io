@@ -34,7 +34,7 @@ async function searchSong() {
         sessionStorage.setItem('searchQuery', query);
         
         // Personal nocodeapi url
-        const searchUrl = `https://v1.nocodeapi.com/_jmusic/spotify/IMMEELTuqYcYRWpV/search?q=${encodeURIComponent(query)}&type=track`;
+        const searchUrl = `https://v1.nocodeapi.com/jmusic_1/spotify/tTVlVIfXSBvLAfHl/search?q=${encodeURIComponent(query)}&type=track`;
 
         const response = await fetch(searchUrl);
 
@@ -90,7 +90,7 @@ async function getTrackIdByArtist(artistName) {
     const encodedArtistName = encodeURIComponent(artistName);
 
     // Construct the search URL for tracks by the artist
-    const searchUrl = `https://v1.nocodeapi.com/_jmusic/spotify/IMMEELTuqYcYRWpV/search?q=${encodedArtistName}&type=track`;
+    const searchUrl = `https://v1.nocodeapi.com/jmusic_1/spotify/tTVlVIfXSBvLAfHl/search?q=${encodedArtistName}&type=track`;
 
     // Make a GET request to the search URL with the Spotify API access token
     const response = await fetch(searchUrl);
@@ -131,7 +131,7 @@ function msToTime(duration) {
 async function getSongInform(trackIds) {
 try {
         const trackIdsStr = trackIds.join(',');
-        const trackInfoUrl = `https://v1.nocodeapi.com/_jmusic/spotify/IMMEELTuqYcYRWpV/tracks?ids=${trackIdsStr}`;
+        const trackInfoUrl = `https://v1.nocodeapi.com/jmusic_1/spotify/tTVlVIfXSBvLAfHl/tracks?ids=${trackIdsStr}`;
         const response = await fetch(trackInfoUrl);
 
         // Check if the response is OK
