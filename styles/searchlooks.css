@@ -120,9 +120,8 @@ html, body {
 .artistName {
         color: white;
         align-self: center;
-        font-family: Arial;
         font-size: 17px;
-        font-weight: light;
+        font-weight: 300;
 }
 .songTitle {
         color: white;
