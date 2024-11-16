@@ -71,7 +71,11 @@ body, html {
 
 
 }
-
+#dropdownBtn {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(8, 8, 8, 0.007);
+}
 .pic1 {
   width: 65px;
   height: 65px;
