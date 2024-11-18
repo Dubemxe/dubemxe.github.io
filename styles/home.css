@@ -26,6 +26,9 @@ body, html {
 }
 .text_section {
   margin-top: 60px;
+  display: flex
+  flex-direction: column;
+  row-gap: 0px;
 }
 
 .p1 {
@@ -85,7 +88,7 @@ body, html {
 .pic2 {
   width: 75px;
   height: 75px;
-  margin-top: 69px;
+  margin-top: 74px;
   margin-left: 20px;
   cursor: pointer;
   margin-bottom: 0px;
@@ -359,8 +362,8 @@ margin-top: 30px;
 /* Custom checkbox label (clickable area) */
 .custom-checkbox {
   display: flex;
-  width: 380px;
-  height: 530px;
+  width: 400px;
+  height: 540px;
   background-color: rgb(49, 48, 53);
   margin-top: 30px;
   margin-left: 15px;
