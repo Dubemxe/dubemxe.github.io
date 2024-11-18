@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;0,500;0,600;0,700;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   </head>
 
@@ -58,7 +59,17 @@
   </div>
   
   <div class="select_boxes">
-<div> <input type="checkbox" class="checker"  value="Drake"> <div id="artistInfo" class="inboxes"></div></div>
+        
+   
+    
+<div>
+  <div class="custom-checkbox-wrapper">
+    <input type="checkbox" class="checker"  value="Drake" class="hidden-checkbox" id="hiddenCheckbox">
+     <label for="hiddenCheckbox" class="custom-checkbox">
+        <span class="checkmark">✔</span>
+    <div id="artistInfo" class="inboxes"></div></div>
+</div>
+    
 <div> <input type="checkbox" class="checker"  value="Davido"><div id="artistInfo2" class="inboxes"></div></div>
 <div> <input type="checkbox" class="checker" value="21"><div id="artistInfo3" class="inboxes"></div></div>
 <div> <input type="checkbox" class="checker" value="Juice Wrld"><div id="artistInfo4" class="inboxes"> </div></div>
