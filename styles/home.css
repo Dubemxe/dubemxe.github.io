@@ -26,9 +26,9 @@ body, html {
 }
 .text_section {
   margin-top: 60px;
-  display: flex
-  flex-direction: column;
-  row-gap: 0px;
+}
+.text_section p {
+  margin: 0;
 }
 
 .p1 {
