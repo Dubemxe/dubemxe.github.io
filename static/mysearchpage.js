@@ -211,7 +211,7 @@ window.onload = function() {
         return;
     }
 
-    const resultsContainer = document.getElementById('songList');
+    const resultsContainer = document.getElementById('ResSong_list');
     searchResults.forEach((track, index) => {
         const artists = track.artists.map(artist => artist.name).join(', ');
         const trackHTML = `
