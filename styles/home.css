@@ -338,9 +338,10 @@ margin-top: 30px;
   padding: 0px;
   height: 116px;
 }
-.custom-close {
-  background-color: transparent; /* Ensure no background */
-  color: white;
+.btn-close {
+  background-color: transparent;
+  color: #ff0000;
+  opacity: 1;
 }
 .D_pics {
   width: 18px;
