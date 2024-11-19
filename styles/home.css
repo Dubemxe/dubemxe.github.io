@@ -322,7 +322,7 @@ margin-top: 30px;
   opacity: 1;
 }
 .sidebar {
-  opacity: 1;
+  opacity: 1 !important;
 }
 .section {
   margin-top: 20px;
