@@ -38,6 +38,7 @@ body, html {
   margin-bottom: 0px;
   margin-left: 125px;
   margin-top: 0px;
+  padding: 0px;
 }
 .p2 {
   margin-top: 0px;
@@ -97,7 +98,7 @@ body, html {
 .pic2 {
   width: 75px;
   height: 75px;
-  margin-top: 74px;
+  margin-top: 85px;
   margin-left: 10px;
   cursor: pointer;
   margin-bottom: 0px;
@@ -105,7 +106,7 @@ body, html {
 .pic1 {
   width: 112px;
   height: 112px;
-  margin-top: 53px;
+  margin-top: 61px;
   margin-bottom: 0px;
   margin-left: 270px;
   cursor: pointer;
