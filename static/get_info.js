@@ -147,7 +147,7 @@ getArtistInfo(artistName3)
     artistInfoDiv3.innerHTML = artistInfoHTML;
   });
 // for div4
-const artistName4 = 'Juice Wrld';
+const artistName4 = 'Phyno';
 const artistInfoDiv4 = document.getElementById('artistInfo4');
 
 getArtistInfo(artistName4)
