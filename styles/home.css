@@ -86,13 +86,6 @@ body, html {
   background-color: rgba(8, 8, 8, 0.007);
   margin-bottom: 24px;
 }
-.light-pic {
-  width: 30px;
-  height: 30px;
-  margin-left: 134px;
-  margin-bottom: 8px;
-  cursor: pointer;
-}
 .pic2 {
   width: 75px;
   height: 75px;
@@ -340,7 +333,7 @@ margin-top: 30px;
 }
 .dropdown-menu {
   background-color: black;
-  width: 170px;
+  width: 130px;
   padding: 0px;
   height: 116px;
 }
