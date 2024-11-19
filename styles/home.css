@@ -71,11 +71,11 @@ body, html {
   display: flex;
   flex-direction: row;
   height: 240px;
-  margin-bottom: 0px;
+  margin-bottom: 20px;
 }
 #dropdownMenu {
-  width: 80px
-  height: 60px;
+  width: 70px
+  height: 100px;
 }
 #dropdownBtn {
   width: 10px;
@@ -83,6 +83,16 @@ body, html {
   border: none;
   background-color: rgba(8, 8, 8, 0.007);
   margin-bottom: 24px;
+}
+.light-pic {
+  width: 30px;
+  height: 30px;
+  margin-left: 134px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+.Dps {
+  font-size: 22;
 }
 .pic2 {
   width: 75px;
@@ -301,10 +311,8 @@ margin-top: 30px;
     .invdiv {
       display: block;
     }
-}
-
 .offcanvas-body {
-  background-color: rgb(11, 11, 53);
+  background-color: black;
   color: #ffffff;
 }
 
@@ -334,6 +342,10 @@ margin-top: 30px;
   background-color: black;
    width: 220px;
   height: 86px;
+}
+.btn-close {
+  color: white;
+  background-color: white;
 }
 .D_pics {
   width: 28px;
