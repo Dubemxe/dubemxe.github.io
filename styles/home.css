@@ -305,8 +305,19 @@ margin-top: 30px;
       display: block;
     }
 }
+/* Ensure full visibility */
+.offcanvas {
+  opacity: 1 !important; /* Fully visible */
+  background-color: rgba(26, 26, 26, 1); /* Solid dark background */
+}
+
+/* Remove any default transitions if causing opacity issues */
+.offcanvas.show {
+  opacity: 1 !important;
+  transition: none !important;
+}
 .offcanvas-body {
-  background-color: black;
+  background-color: ;
   color: #ffffff;
   opacity: 1;
 }
