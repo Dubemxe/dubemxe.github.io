@@ -307,6 +307,7 @@ margin-top: 30px;
 .offcanvas-body {
   background-color: black;
   color: #ffffff;
+  opacity: 1;
 }
 
 .section {
@@ -337,7 +338,8 @@ margin-top: 30px;
   padding: 0px;
   height: 116px;
 }
-.btn-close {
+.custom-close {
+  background-color: transparent; /* Ensure no background */
   color: white;
 }
 .D_pics {
