@@ -39,6 +39,7 @@ body, html {
   margin-left: 125px;
   margin-top: 0px;
   padding: 0px;
+  line-height: 1
 }
 .p2 {
   margin-top: 0px;
@@ -72,7 +73,7 @@ body, html {
   display: flex;
   flex-direction: row;
   height: 240px;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
 }
 #dropdownMenu {
   width: 70px
@@ -91,9 +92,6 @@ body, html {
   margin-left: 134px;
   margin-bottom: 8px;
   cursor: pointer;
-}
-.Dps {
-  font-size: 22;
 }
 .pic2 {
   width: 75px;
@@ -328,7 +326,7 @@ margin-top: 30px;
 .light-pic {
   width: 30px;
   height: 30px;
-  margin-left: 134px;
+  margin-left: 114px;
   margin-bottom: 8px;
   cursor: pointer;
 }
@@ -343,21 +341,20 @@ margin-top: 30px;
 .dropdown-menu {
   background-color: black;
    width: 220px;
-  height: 86px;
+  height: 116px;
 }
 .btn-close {
   color: white;
-  background-color: white;
 }
 .D_pics {
-  width: 28px;
-  height: 23px;
+  width: 18px;
+  height: 13px;
   margin-right: 4px;
 }
 .Dps {
   color: #fff;
   margin-bottom: 0px;
-  font-weight: bold;
+  font-size: 20px;
 }
 .dropdown-item:hover {
   background-color: rgb(20, 20, 82);
