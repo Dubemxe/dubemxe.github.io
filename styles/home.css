@@ -98,7 +98,7 @@ body, html {
   width: 75px;
   height: 75px;
   margin-top: 74px;
-  margin-left: 20px;
+  margin-left: 10px;
   cursor: pointer;
   margin-bottom: 0px;
 }
@@ -311,6 +311,7 @@ margin-top: 30px;
     .invdiv {
       display: block;
     }
+}
 .offcanvas-body {
   background-color: black;
   color: #ffffff;
