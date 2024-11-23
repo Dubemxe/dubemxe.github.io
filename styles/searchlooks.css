@@ -147,7 +147,7 @@ html, body {
   display: flex;
   flex-direction: row;
   font-family: sans-serif;
-  column-gap: 87px;
+  column-gap: 37px;
   justify-content: space-between;
   cursor: pointer;
 }
