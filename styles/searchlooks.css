@@ -121,6 +121,7 @@ html, body {
 }
 .artistName {
         color: white;
+        font-family: sans-serif;
         align-self: center;
         font-size: 17px;
         font-weight: 300;
@@ -132,7 +133,8 @@ html, body {
         align-self: center;
         white-space: nowrap; /* Prevent text from wrapping onto a new line */
         overflow: hidden;
-        text-overflow: ellipsis; 
+        text-overflow: ellipsis;
+        font-family: sans-serif;
 }
 .noPreview {
     margin-right: auto;
@@ -159,6 +161,7 @@ html, body {
         margin-left: 80px;
         align-self: center;
         margin-right: 27px;
+        font-family: sans-serif;
 }
 .albumImage {
         width: 80px;
