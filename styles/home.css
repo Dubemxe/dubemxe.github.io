@@ -222,12 +222,14 @@ margin-top: 30px;
 }
 @media (max-width: 576px) {
   .p1 {
+    font-weight: bolder;
     color: whitesmoke;
     font-size: 30px;
+    margin-left: 40px;
     margin-right: 0px;
     }
   .p2 {
-    margin-left: 24px;
+    margin-left: 48px;
     font-size: 18px;
     margin-bottom: 0px;
 
@@ -248,20 +250,17 @@ margin-top: 30px;
     .p3 {
       font-size: 35px;
     }
-    .checker {
-      width: 20px;
-      height: 20px;
-      margin-left: 162px;
-      margin-top: 8px;
-    }
     .inboxes {
       width: 180px;
       height: 310px;
-      background-color: rgb(14, 14, 68);
       margin-top: 5px;
       margin-left: 8px;
-      border-radius: 15px;
-      cursor: pointer;
+    }
+    .custom-checkbox {
+      width: 180px;
+      height: 310px;
+      margin-top: 5px;
+      margin-left: 8px;
     }
     .artist_image {
       width: 160px;
