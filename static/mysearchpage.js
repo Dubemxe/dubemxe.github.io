@@ -22,6 +22,13 @@ function pauseAudio() {
         currentSong.pause(); // Pause the current audio
     }
 }
+function addFont() {
+    const fontLink = document.createElement('link');
+    fontLink.href = 'https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap'>
+    fontLink.rel = 'stylesheet';
+    document.head.appendChild(fontLink);
+}
+addFont();
 // Search function to retrieve music data from the spotify api
 async function searchSong() {
     try {
@@ -143,7 +150,7 @@ try {
 
     data.tracks.forEach((track, index) => {
         const songHTML = `
-         <div class="musicInfo" onclick="getAudio('${track.preview_url}')" class="musicInfo">
+         <div class="musicInfo" onclick="getAudio('${track.preview_url}')" class="musicInfo" style="font-family: 'Manrope', sans-serif;">
         <img src="${track.album.images[0].url}" alt="${track.name}" class="albumImage" id="popup_image${index}" onclick="popupDiv(${index})">
         <div class="artistsDets">
         <p class="songTitle">${track.name}</p>
@@ -215,7 +222,7 @@ window.onload = function() {
     searchResults.forEach((track, index) => {
         const artists = track.artists.map(artist => artist.name).join(', ');
         const trackHTML = `
-                 <div class="musicInfo" onclick="getAudio('${track.preview_url}')">
+                 <div class="musicInfo" onclick="getAudio('${track.preview_url}')" style="font-family: 'Manrope', sans-serif;">
         <img src="${track.album.images[0].url}" alt="${track.name}" class="albumImage" id="popup_image${index}" onclick="popupDiv(${index})">
         <div id="content_div${index}" class="content_div">
         <div class="img_box">
