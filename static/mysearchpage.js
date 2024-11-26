@@ -24,7 +24,7 @@ function pauseAudio() {
 }
 function addFont() {
     const fontLink = document.createElement('link');
-    fontLink.href = 'https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap'>
+    fontLink.href = 'https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap';
     fontLink.rel = 'stylesheet';
     document.head.appendChild(fontLink);
 }
