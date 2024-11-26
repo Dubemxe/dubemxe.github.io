@@ -122,8 +122,8 @@ html, body {
 .artistName {
         color: white;
         align-self: center;
-        font-size: 21px;
-        font-weight: ;
+        font-size: 15px;
+        font-weight: light;
 }
 .songTitle {
         color: white;
@@ -154,7 +154,7 @@ html, body {
         color: white;
         font-size: 26px;
         font-weight: bold;
-        margin-left: 185px;
+        margin-left: 200px;
         align-self: center;
         margin-right: 27px;
 }
