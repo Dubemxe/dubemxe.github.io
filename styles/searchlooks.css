@@ -127,14 +127,14 @@ html, body {
 }
 .songTitle {
         color: white;
-        font-size: 38px;
+        font-size: 30px;
         align-self: center;
         white-space: nowrap; /* Prevent text from wrapping onto a new line */
         overflow: hidden;
         text-overflow: ellipsis;
 }
 .noPreview {
-    margin-right: auto;
+    margin-right: 10px;
     font-size: 28px;
 }
 .musicInfo {
