@@ -153,7 +153,7 @@ try {
          <div class="musicInfo" onclick="getAudio('${track.preview_url}')" class="musicInfo" style="font-family: 'Manrope', sans-serif;">
         <img src="${track.album.images[0].url}" alt="${track.name}" class="albumImage" id="popup_image${index}" onclick="popupDiv(${index})">
         <div class="artistsDets">
-        <p class="songTitle">${track.name}</p>
+        <p class="songTitle" style="font-family: 'Manrope'">${track.name}</p>
         <p class="artistName">${track.artists.map(artist => artist.name).join(', ')} . ${track.album.name}</p>
         </div>
         <p class="duration">${msToTime(track.duration_ms)}</p> 
