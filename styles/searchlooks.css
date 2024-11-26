@@ -158,19 +158,19 @@ html, body {
         color: white;
         font-size: 26px;
         font-weight: bold;
-        margin-left: 80px;
+        margin-left: 145px;
         align-self: center;
         margin-right: 27px;
         font-family: sans-serif;
 }
 .albumImage {
-        width: 80px;
-        height: 80px;
+        width: 92px;
+        height: 92px;
         border-radius: 0px;
-        margin-left: 55px;
+        margin-left: 65px;
         margin-top: 10px;
         margin-bottom: 15px;
-        margin-right: 50px;
+        margin-right: 68px;
 }
 button .icon {
         width: 43px;
