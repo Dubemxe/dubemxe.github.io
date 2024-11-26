@@ -121,7 +121,6 @@ html, body {
 }
 .artistName {
         color: white;
-        font-family: sans-serif;
         align-self: center;
         font-size: 17px;
         font-weight: 300;
@@ -148,7 +147,6 @@ html, body {
   margin-bottom: 1px;
   display: grid;
   grid-template-columns: 0.5fr 1fr 1fr 1fr;
-  font-family: sans-serif;
   column-gap: px;
   justify-content: space-between;
   cursor: pointer;
@@ -161,7 +159,6 @@ html, body {
         margin-left: 185px;
         align-self: center;
         margin-right: 27px;
-        font-family: sans-serif;
 }
 .albumImage {
         width: 92px;
@@ -188,7 +185,6 @@ button .icon {
     margin-top: 30px;
     margin-left: 25px;
     border-radius: 25px;
-    font-family: sans-serif;
     position: absolute;
     left: 10%;
     display: none;
