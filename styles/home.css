@@ -253,10 +253,13 @@ margin-top: 30px;
       font-size: 35px;
     }
     .custom-checkbox-wrapper {
-      width: 180px;
-      height: 310px;
-      margin-top: 5px;
-      margin-left: 8px;
+       display: inline-block;
+    }
+    .custom-checkbox {
+       width: 180px;
+        height: 250px;
+        margin-top: 5px;
+        margin-left: 8px;
     }
     .artist_image {
       width: 160px;
