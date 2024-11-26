@@ -146,10 +146,10 @@ html, body {
   padding-top: 10px;
   width: 100%;
   margin-bottom: 1px;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr 1fr;
   font-family: sans-serif;
-  column-gap: 37px;
+  column-gap: px;
   justify-content: space-between;
   cursor: pointer;
 }
@@ -170,7 +170,7 @@ html, body {
         margin-left: 55px;
         margin-top: 10px;
         margin-bottom: 15px;
-        margin-right: 0px;
+        margin-right: 50px;
 }
 button .icon {
         width: 43px;
@@ -188,6 +188,7 @@ button .icon {
     margin-top: 30px;
     margin-left: 25px;
     border-radius: 25px;
+    font-family: sans-serif;
     position: absolute;
     left: 10%;
     display: none;
