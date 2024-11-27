@@ -216,6 +216,54 @@ transition: all 0.3s ease;
 .invdiv {
   display: none;
 }
+/* Hide the default checkbox */
+.hidden-checkbox {
+  display: none;
+}
+
+/* Custom checkbox wrapper */
+.custom-checkbox-wrapper {
+  display: inline-block;
+}
+
+/* Custom checkbox label (clickable area) */
+.custom-checkbox {
+  display: flex;
+  width: 400px;
+  height: 540px;
+  background-color: rgb(49, 48, 53);
+  margin-top: 30px;
+  margin-left: 15px;
+  border-radius: 25px;
+  cursor: pointer;
+  border: 2px solid #000000;
+  font-size: 18px;
+  color: #f5f0f0;
+  transition: background-color 0.3s, border-color 0.3s;
+
+}
+.custom-checkbox:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+/* Checkmark styling */
+.checkmark {
+  display: none;
+  font-size: 40px;
+  color: #cafc91;
+  margin-top: 10px;
+  margin-left: 320px;
+}
+
+/* Checked state styling */
+.hidden-checkbox:checked + .custom-checkbox {
+  border-color: #6ea1d8;
+  color: white;
+  opacity: 0.8;
+ 
+}
+
 @media (max-width: 576px) {
   .p1 {
     font-weight: bolder;
@@ -252,9 +300,9 @@ transition: all 0.3s ease;
        display: block;
   }
   .custom-checkbox {
-        width: 75px;
-        background-color: green;
-        height: 120px;
+        width: 180px;
+        background-color: rgb(49, 48, 53);
+        height: 250px;
         margin-top: 5px;
         margin-left: 8px;
         transition: none;
@@ -367,51 +415,4 @@ transition: all 0.3s ease;
 .dropdown-item:hover {
   background-color: rgb(20, 20, 82);
   cursor: pointer;
-}
-/* Hide the default checkbox */
-.hidden-checkbox {
-  display: none;
-}
-
-/* Custom checkbox wrapper */
-.custom-checkbox-wrapper {
-  display: inline-block;
-}
-
-/* Custom checkbox label (clickable area) */
-.custom-checkbox {
-  display: flex;
-  width: 400px;
-  height: 540px;
-  background-color: blue;/* rgb(49, 48, 53);*/
-  margin-top: 30px;
-  margin-left: 15px;
-  border-radius: 25px;
-  cursor: pointer;
-  border: 2px solid #000000;
-  font-size: 18px;
-  color: #f5f0f0;
-  transition: background-color 0.3s, border-color 0.3s;
-
-}
-.custom-checkbox:hover {
-  transform: scale(1.1);
-  transition: all 0.3s ease;
-}
-
-/* Checkmark styling */
-.checkmark {
-  display: none;
-  font-size: 40px;
-  color: #cafc91;
-  margin-top: 10px;
-  margin-left: 320px;
-}
-
-/* Checked state styling */
-.hidden-checkbox:checked + .custom-checkbox {
-  border-color: #6ea1d8;
-  color: white;
-  opacity: 0.8;
- 
 }
