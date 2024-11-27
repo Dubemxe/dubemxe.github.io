@@ -383,7 +383,7 @@ transition: all 0.3s ease;
   display: flex;
   width: 400px;
   height: 540px;
-  background-color: green;/* rgb(49, 48, 53);*/
+  background-color: blue;/* rgb(49, 48, 53);*/
   margin-top: 30px;
   margin-left: 15px;
   border-radius: 25px;
