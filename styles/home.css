@@ -269,11 +269,11 @@ transition: all 0.3s ease;
     font-weight: bolder;
     color: whitesmoke;
     font-size: 30px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: 10px;
+    margin-right: 8px;
     }
   .p2 {
-    margin-left: 8px;
+    margin-left: 14px;
     font-size: 18px;
     margin-bottom: 0px;
 
@@ -291,18 +291,19 @@ transition: all 0.3s ease;
       height: 40px;
       margin-left: 0px;
       display: block;
-      margin-right: px;
+      margin-right: 18px;
+      margin-top: 65px;
     }
     .p3 {
-      font-size: 35px;
+      font-size: 30px;
     }
     .custom-checkbox-wrapper {
        display: block;
   }
   .custom-checkbox {
-        width: 210px;
+        width: 199px;
         background-color: rgb(49, 48, 53);
-        height: 275px;
+        height: 285px;
         margin-top: 5px;
         margin-left: 8px;
         transition: none;
@@ -341,6 +342,7 @@ transition: all 0.3s ease;
     }
     .my_header {
         grid-template-columns: 2.3fr  1.2fr;
+        margin-bottom: 10px;      
     }
     .select_boxes {
       grid-template-columns: 1fr 1fr;
