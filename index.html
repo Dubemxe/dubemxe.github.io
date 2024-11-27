@@ -22,7 +22,24 @@
   <p class="p1">Welcome to JMusic</p>
   <p class="p2">All your favorites are here...</p>
     </div>
-  <img src="styles/images/icons8-menu-50.png" class="ham_menu">
+  <img src="styles/images/icons8-menu-50.png" class="ham_menu" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar">
+     <!-- Offcanvas Sidebar -->
+  <div class="offcanvas offcanvas-end" id="sidebar" tabindex="-1" aria-labelledby="sidebarLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="sidebarLabel">JMusic</h5>
+      <button type="button" class="btn-close custom-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <!-- Dropdown Menu -->
+      <ul class="list-group">
+        <p class="section">Light Mode  <img src="styles/images/icons8-light-24.png" class="light-pic"></p>
+        <div class="section"><a  href="#">About Us</a></div>
+        <div class="section"><a  href="#">Support</a></div>
+        <div class="section"><a  href="#">Report a problem</a></div>
+
+      </ul>
+    </div>
+   </div>
     
    <img src="styles/images/icons8-user-64.png" class="pic1" data-bs-toggle="dropdown"  aria-expanded="false"aria-controls="dropdownMenu">
      <ul class="dropdown-menu" id="dropdownMenu">
