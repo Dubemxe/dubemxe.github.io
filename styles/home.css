@@ -221,11 +221,11 @@ transition: all 0.3s ease;
     font-weight: bolder;
     color: whitesmoke;
     font-size: 30px;
-    margin-left: 40px;
+    margin-left: 0px;
     margin-right: 0px;
     }
   .p2 {
-    margin-left: 48px;
+    margin-left: 8px;
     font-size: 18px;
     margin-bottom: 0px;
 
@@ -241,7 +241,7 @@ transition: all 0.3s ease;
     .ham_menu {
       width: 40px;
       height: 40px;
-      margin-left: 10px;
+      margin-left: 0px;
       display: block;
       margin-right: px;
     }
@@ -249,14 +249,14 @@ transition: all 0.3s ease;
       font-size: 35px;
     }
     .custom-checkbox-wrapper {
-       display: inline-block;
-       width: 180px;
+       display: block;
+  }
+    .custom-checkbox {
+        width: 180px;
+        background-color: green;
         height: 250px;
         margin-top: 5px;
         margin-left: 8px;
-    }
-    .custom-checkbox {
-      
     }
     .artist_image {
       width: 160px;
