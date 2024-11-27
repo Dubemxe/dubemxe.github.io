@@ -300,9 +300,9 @@ transition: all 0.3s ease;
        display: block;
   }
   .custom-checkbox {
-        width: 180px;
+        width: 210px;
         background-color: rgb(49, 48, 53);
-        height: 250px;
+        height: 275px;
         margin-top: 5px;
         margin-left: 8px;
         transition: none;
