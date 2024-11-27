@@ -250,13 +250,15 @@ transition: all 0.3s ease;
     }
     .custom-checkbox-wrapper {
        display: block;
+       background-color: green;
   }
-    .custom-checkbox {
+  .custom-checkbox {
         width: 180px;
         background-color: green;
         height: 250px;
         margin-top: 5px;
-        margin-left: 8px;
+        margin-left: 8px;i
+        transition: none;
     }
     .artist_image {
       width: 160px;
@@ -296,7 +298,7 @@ transition: all 0.3s ease;
     .select_boxes {
       grid-template-columns: 1fr 1fr;
     }
-    .invdiv {
+    .extradiv {
       display: block;
     }
 }
@@ -382,7 +384,7 @@ transition: all 0.3s ease;
   display: flex;
   width: 400px;
   height: 540px;
-  background-color: rgb(49, 48, 53);
+  background-color: green;/* rgb(49, 48, 53);*/
   margin-top: 30px;
   margin-left: 15px;
   border-radius: 25px;
