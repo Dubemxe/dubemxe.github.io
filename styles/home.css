@@ -153,7 +153,9 @@ transition: all 0.3s ease;
     font-family: sans-serif;
     cursor: pointer;
 }
-
+.extradiv {
+  display: none;
+}
 .artist_image {
         width: 350px;
         height: 320px;
@@ -186,12 +188,6 @@ transition: all 0.3s ease;
         font-family: sans-serif;
         margin-top: 6px;
         font-size: 20px;
-}
-.checker {
-width: 35px;
-height: 35px;
-margin-left: 370px;
-margin-top: 30px;
 }
 .roboto-light {
   font-family: "Roboto", sans-serif;
@@ -245,21 +241,22 @@ margin-top: 30px;
     .ham_menu {
       width: 40px;
       height: 40px;
-      margin-left: 50px;
+      margin-left: 10px;
       display: block;
-      margin-right: 14px;
+      margin-right: px;
     }
     .p3 {
       font-size: 35px;
     }
     .custom-checkbox-wrapper {
        display: inline-block;
-    }
-    .custom-checkbox {
        width: 180px;
         height: 250px;
         margin-top: 5px;
         margin-left: 8px;
+    }
+    .custom-checkbox {
+      
     }
     .artist_image {
       width: 160px;
@@ -294,7 +291,7 @@ margin-top: 30px;
       height: 2360px;
     }
     .my_header {
-        grid-template-columns: 5.3fr  1.2fr;
+        grid-template-columns: 2.3fr  1.2fr;
     }
     .select_boxes {
       grid-template-columns: 1fr 1fr;
