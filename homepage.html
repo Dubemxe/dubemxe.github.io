@@ -15,14 +15,18 @@
 
   <body>
 <div class="everything_box">
-<div class="mycontainer">
   <div class="header">
-  <div class="my_header">
-    <div class="text_section">
-  <p class="p1">Welcome to JMusic</p>
-  <p class="p2">All your favorites are here...</p>
+    <div class="my_header">
+     <img src="images/icons8-user-64.png" class="pic2">
+     <div class="search_div">
+      <input placeholder="Search for your Favorites..." class="searchbar">
+      <button class="searchbtn"><img src="images/icons8-search-48.png" class="img"></button></div>
+      <img src="images/hamburger-menu2.png" class="pic1">
+  </div>
     </div>
-  <img src="styles/images/icons8-menu-50.png" class="ham_menu" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar">
+
+  
+    <img src="styles/images/icons8-menu-50.png" class="ham_menu" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar">
      <!-- Offcanvas Sidebar -->
   <div class="offcanvas offcanvas-end" id="sidebar" tabindex="-1" aria-labelledby="sidebarLabel">
     <div class="offcanvas-header">
@@ -70,16 +74,15 @@
     </div>
    </div>
     
-</div>
+ <div class="tooBox">
+  <div class="mycontainer">
+    
 <div class="round">
 <p class="p3">Select preferred Artists</p></div>
-  </div>
   
   <div class="select_boxes">
-        
-   
-    
-<div>
+  
+   <div>
   <div class="custom-checkbox-wrapper">
     <input type="checkbox"  value="Drake" class="hidden-checkbox" id="hiddenCheckbox">
      <label for="hiddenCheckbox" class="custom-checkbox">
@@ -153,6 +156,16 @@
 
 <button class="butn"  onclick="toSearchpage()">Continue</button>
 </div>
+  <div class="funSide">
+  <img src="images/Banner Art.png" class="disArts">
+  <p class="Np3">Discover New Artists</p>
+  <div class="adDiv">
+    <p class="fline">JMusic</p>
+    <p class="sline"> Home Of Favorites</p>
+
+    <img src="images/adPic.jpg" class="adPic">
+  </div>
+</div></div>
 </div>
 
 <script src="static/get_info.js"></script>
