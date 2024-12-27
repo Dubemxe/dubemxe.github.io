@@ -17,7 +17,7 @@ body, html {
 }
 .logotxt {
   margin-left: 25px;
-  margin-right: 850px;
+  margin-right: 890px;
   margin-bottom: 0;
   color: rgba(247, 243, 12, 0.911);
   cursor: pointer;
@@ -37,7 +37,7 @@ body, html {
 }
 .wlctxt {
   color: rgba(247, 243, 12, 0.911);
-  font-size: 44px;
+  font-size: 30px;
   font-family: sans-serif;
   font-weight: bolder;
 }
@@ -49,22 +49,22 @@ body, html {
   margin-top: 40px;
 }
 .email_input {
-  width: 420px;
+  width: 450px;
   border-style: solid;
   border-color: rgba(128, 128, 128, 0.425);
   border-radius: 8px;
-  height: 38px;
+  height: 42px;
   background-color: rgb(255, 255, 255);
   padding-left: 10px;
   font-size: 15px;
 }
 
 .password_input {
-  width: 420px;
+  width: 450px;
   border-style: solid;
   border-color: gray;
   border-radius: 8px;
-  height: 38px;
+  height: 42px;
   padding-left: 10px;
   font-size: 15px;
 }
@@ -86,9 +86,9 @@ body, html {
 
 .btn2 {
   background-color: rgb(131, 39, 39);
-  width: 185px;
+  width: 190px;
   border: none;
-  height: 43px;
+  height: 46px;
   font-weight: bold;
   color: white;
   margin-top: 12px;
