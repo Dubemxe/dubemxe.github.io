@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jmusic</title>
+    <link rel="stylesheet" href="signinpage.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/antd/4.23.4/antd.min.css" />
+
+  </head>
+
+  <body>
+
+<div class="theBox">
+ <div class="header"> <p class="logotxt">JMusic</p><button class="btn2">Back to SignUp</button></div>
+  <div class="container">
+<p class="wlctxt">Welcome Back...</p>
+
+<div id="g_id_onload"
+data-client_id="YOUR_CLIENT_ID"
+data-context="signup"
+data-ux_mode="popup"
+data-callback="handleCredentialResponse">
+</div>
+
+<div class="g_id_signin" data-type="standard"></div>
+
+<div class="ant-divider"></div>
+<div class="ant-divider ant-divider-horizontal ant-divider-with-text"
+style="color: rgba(255, 255, 255, 0.411); border-color: rgba(255, 255, 255, 0.411);">
+  <span class="ant-divider-inner-text" style="color: white;">Or continue with Email</span>
+</div>
+<div class="client_cred">
+<input type="" placeholder="Email Address" class="email_input">
+<input type="" placeholder="Enter Password" class="password_input"></div>
+<button class="btn1">Login now</button>
+
+</div>
+</div>
+
+<script>
+  function handleCredentialResponse(response) {
+      console.log("Encoded JWT ID token: " + response.credential);
+  }
+</script>
+</body>
+</html>
