@@ -17,7 +17,7 @@ body, html {
 }
 .logotxt {
   margin-left: 25px;
-  margin-right: 890px;
+  margin-right: 930px;
   margin-bottom: 0;
   color: rgba(247, 243, 12, 0.911);
   cursor: pointer;
@@ -37,7 +37,7 @@ body, html {
 }
 .wlctxt {
   color: rgba(247, 243, 12, 0.911);
-  font-size: 30px;
+  font-size: 40px;
   font-family: sans-serif;
   font-weight: bolder;
 }
