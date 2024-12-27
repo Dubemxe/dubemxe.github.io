@@ -15,7 +15,7 @@ body, html {
   margin-bottom: 110px;
   column-gap: 14px;
   justify-items: center;
-  margin-left: 850px;
+  margin-left: 885px;
 }
 .container {
   align-items: center;
@@ -23,7 +23,7 @@ body, html {
 }
 .wlctxt {
   color: rgba(247, 243, 12, 0.911);
-  font-size: 47px;
+  font-size: 52px;
   font-family: sans-serif;
   font-weight: bolder;
 }
@@ -35,22 +35,22 @@ body, html {
   margin-top: 40px;
 }
 .email_input {
-  width: 420px;
+  width: 450px;
   border-style: solid;
   border-color: rgba(128, 128, 128, 0.425);
   border-radius: 8px;
-  height: 38px;
+  height: 43px;
   background-color: rgb(255, 255, 255);
   padding-left: 10px;
   font-size: 15px;
 }
 
 .password_input {
-  width: 420px;
+  width: 450px;
   border-style: solid;
   border-color: gray;
   border-radius: 8px;
-  height: 38px;
+  height: 43px;
   padding-left: 10px;
   font-size: 15px;
 }
@@ -60,7 +60,7 @@ body, html {
   border-radius: 10px;
   width: 380px;
   height: 40px;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
   color: white;
   margin-top: 32px;
@@ -71,14 +71,14 @@ body, html {
 }
 .alrtxt {
   color: white;
-  font-size: 16px;
+  font-size: 17px;
   margin-top: 8px;
 }
 .btn2 {
   background-color: rgb(15, 13, 13);
-  width: 105px;
+  width: 122px;
   border: none;
-  height: 39px;
+  height: 40px;
   color: white;
   font-size: 20px;
   border-radius: 7px;
