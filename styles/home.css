@@ -4,42 +4,90 @@ body, html {
   font-family: "Manrope";
 }
 .mycontainer {
-  width: 100%;
+  width: 612px;
   margin: 0px;
-  height: 2700px;
   background-color: rgb(0, 0, 17);
-  right: 50%;
   display: flex;
   flex-direction: column;
 }
+.funSide {
+  background-color: rgb(0, 0, 17);
+  width: 615px;
+  height: 1280px;
+  justify-items: center;
+  }
+.disArts {
+    width: 515px;
+    height: 310px;
+    margin-top: 90px;
+    margin-left: 0px;
+    margin-bottom: 15px;
+  }
+  .adDiv {
+    width: 520px;
+    height: 630px;
+    background-color: rgb(30, 30, 32);
+    border-radius: 40px;
+    justify-items: center;
+    padding-top: 18px;
+    margin-top: 115px;
+  }
+  .fline {
+  margin-bottom: 0px;
+  color: rgb(255, 136, 0);
+  margin-top: 15px;
+}
+.sline {
+  margin: 0px;
+  font-size: 29px;
+  color: whitesmoke;
+  margin-bottom: 35px;
+  font-family: Cochin;
+}
+.adPic {
+  width: 380px;
+  height: 430px;
+}
 .everything_box {
         width: 100%;
-        height: 100%;
         margin: 0px;
         background-color: yellow;
 }
-
+.tooBox {
+  display: flex;
+  flex-direction: row;
+  background-color: pink;
+}
 .header {
     display: flex;
     background-image: url('images/background\ img2.jpeg');
     flex-direction: column;
+    height: 170px;
 }
-.text_section {
-  margin-top: 60px;
+.pic1 {
+  width: 54px;
+  height: 54px;
+  margin-bottom: 0px;
+  margin-left: 98px;
+  margin-top: 71px;
+  cursor: pointer;
 }
-.text_section p {
-  line-height: 1.5; 
+.pic2 {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 0px;
+  margin-left: 50px;
+  margin-top: 38px;
+  cursor: pointer;
 }
-
 .p1 {
   font-weight: bold;
+  margin-top: 20px;
   color: whitesmoke;
-  font-size: 68px;
+  font-size: 58px;
   margin-bottom: 0px;
   margin-left: 125px;
   margin-top: 0px;
-  padding: 0px;
-  line-height: 1
 }
 .p2 {
   margin-top: 0px;
@@ -51,15 +99,74 @@ body, html {
 .p3 {
   font-weight: bold;
   color: whitesmoke;
-  margin-top: 30px;
-  font-size: 50px;
+  margin-top: 90px;
+  font-size: 28px;
 
+}
+.Np3 {
+  font-weight: bold;
+  color: whitesmoke;
+  margin-top: 0px;
+  font-size: 28x;
+}
+.searchbar {
+  width: 410px;
+  color: white;
+  height: 50px;
+  margin-left: 0px;
+  margin-top: 0px;
+  font-size: 20px;
+  background-color: rgba(250, 239, 239, 0.019);
+  border-color: white;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-top-left-radius: 28px;
+  border-bottom-left-radius: 28px;
+  text-align: center;
+  margin-right: 0px;
+  border-style: solid;
+  border-right-color: rgba(250, 239, 239, 0.019);
+}
+
+.searchbar::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+.search_div {
+  display: flex;
+  flex-direction: row;
+  column-gap: 0px;
+  margin-top: 70px;
+  margin-left: 300px;
+}
+.searchbtn {
+
+  width: 65px;
+  margin-left: 0px;
+  height: 55.5px;
+  margin-top: 0px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  background-color: rgba(250, 239, 239, 0.019);
+  border-color: white;
+  border-style: solid;
+  text-align: center;
+  border-left-color: rgba(250, 239, 239, 0.007);
+
+
+}
+.img {
+  width: 25px;
+  height: 25px;
 }
 .select_boxes {
   background-color: rgb(0, 0, 17);
-  border-radius: 20px;
-  padding-top: 32px;
   display: grid;
+  width: 608px;
+  margin-top: 0px;
   grid-template-columns: 0.5fr 0.5fr 0.5fr;
 }
 
@@ -111,19 +218,20 @@ body, html {
   display: none;
 }
 .butn {
-  height: 78px;
-  width: 260px;
+  height: 65px;
+  width: 200px;
   border-radius: 60px;
   border: none;
   margin-top: 55px;
-place-self: center;
-color: white;
-background-color: rgb(11, 11, 53);
-font-size: 20px;
-font-weight: bolder;
-cursor: pointer;
-box-shadow:  12px 12px 12px rgba(19, 2, 247, 0.1);
-transition: all 0.3s ease;
+  place-self: center;
+  color: white;
+  background-color: #00BCD4;
+  font-size: 20px;
+  font-weight: bolder;
+  cursor: pointer;
+  box-shadow:  12px 12px 12px rgba(166, 163, 184, 0.062);
+  transition: all 0.3s ease;
+  margin-left: 10px;  
 }
 
 .butn:hover {
@@ -140,25 +248,29 @@ transition: all 0.3s ease;
   background-color: rgb(0, 0, 17);
   text-align: center;
   margin-bottom: 0px;
-  padding-top: 30px;
+  margin-top: 0px;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  width: 540px;
   box-shadow: 12px 12px 32px 32px rgba(0, 0, 0, 0.952);
 }
 .inboxes {
-    width: 400px;
-    height: 540px;
+    width: 180px;
+    height: 230px;
     background-color: rgb(49, 48, 53);
-    margin-top: 10px;
-    margin-left: 15px;
+    margin-top: 30px;
+    margin-left: 0px;
     border-radius: 25px;
     font-family: sans-serif;
     cursor: pointer;
+    margin: 6px;
 }
 .extradiv {
   display: none;
 }
 .artist_image {
-        width: 350px;
-        height: 320px;
+        width: 100px;
+        height: 100px;
         border-radius: 8px;
         margin-left: 23px;
         margin-top: 25px;
@@ -167,23 +279,22 @@ transition: all 0.3s ease;
 .name {
         color: white;
         margin-top: 10px;
-        margin-bottom: 52px;
-        margin-left: 20px;
-        font-size: 35px;
+        margin-bottom: 19px;
+        margin-left: 5px;
+        font-size: 20px;
         font-family: sans-serif;
-        font-weight: bold;
 }
 .followers {
         color: white;
-        margin-left: 25px;
+        margin-left: 15px;
         margin-bottom: 0px;
         font-family: sans-serif;
         margin-top: 6px;
-        font-size: 20px;
+        font-size: 14px;
 }
 .rating {
         color: white;
-        margin-left: 26px;
+        margin-left: 16px;
         margin-bottom: 0px;
         font-family: sans-serif;
         margin-top: 6px;
