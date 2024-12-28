@@ -340,18 +340,16 @@ body, html {
 /* Custom checkbox label (clickable area) */
 .custom-checkbox {
   display: flex;
-  width: 400px;
-  height: 540px;
+  width: 180px;
+  height: 220px;
   background-color: rgb(49, 48, 53);
-  margin-top: 30px;
-  margin-left: 15px;
+  margin: 6px;
   border-radius: 25px;
   cursor: pointer;
   border: 2px solid #000000;
   font-size: 18px;
   color: #f5f0f0;
   transition: background-color 0.3s, border-color 0.3s;
-
 }
 .custom-checkbox:hover {
   transform: scale(1.1);
