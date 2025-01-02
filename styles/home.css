@@ -73,11 +73,11 @@ body, html {
   cursor: pointer;
 }
 .pic2 {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   margin-bottom: 0px;
-  margin-left: 50px;
-  margin-top: 38px;
+  margin-left: 120px;
+  margin-top: 18px;
   cursor: pointer;
 }
 .p1 {
@@ -112,7 +112,7 @@ body, html {
 .searchbar {
   width: 410px;
   color: white;
-  height: 50px;
+  height: 62.5px;
   margin-left: 0px;
   margin-top: 0px;
   font-size: 20px;
@@ -138,13 +138,13 @@ body, html {
   flex-direction: row;
   column-gap: 0px;
   margin-top: 70px;
-  margin-left: 300px;
+  margin-left: 200px;
 }
 .searchbtn {
 
   width: 65px;
   margin-left: 0px;
-  height: 55.5px;
+  height: 62.5px;
   margin-top: 0px;
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
