@@ -250,5 +250,5 @@ window.onload = function() {
 
     // Display the message on the results page
     if (searchQuery) {
-        document.getElementById('searchMessage').textContent = `Here's the results for "${searchQuery}"`;
+        document.getElementById('searchMessage').textContent = `Here's the result for "${searchQuery}"`;
     }
