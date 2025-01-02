@@ -73,11 +73,11 @@ body, html {
   cursor: pointer;
 }
 .pic2 {
-  width: 105px;
-  height: 105px;
+  width: 115px;
+  height: 115px;
   margin-bottom: 0px;
   margin-left: 110px;
-  margin-top: 18px;
+  margin-top: 35px;
   cursor: pointer;
 }
 .p1 {
@@ -245,20 +245,22 @@ body, html {
   display: none;
 }
 .artist_image {
-        width: 100px;
-        height: 100px;
+        width: 150px;
+        height: 130px;
         border-radius: 8px;
-        margin-left: 23px;
-        margin-top: 25px;
-        margin-bottom: 10px;
+        margin-left: 13px;
+        margin-top: 10px;
+        margin-bottom: 8px;
 }
 .name {
         color: white;
         margin-top: 10px;
-        margin-bottom: 19px;
-        margin-left: 5px;
-        font-size: 20px;
+        margin-bottom: 15px;
+        margin-left: 10px;
+        font-size: 17px;
         font-family: sans-serif;
+        font-weight: bold;
+
 }
 .followers {
         color: white;
@@ -266,15 +268,17 @@ body, html {
         margin-bottom: 0px;
         font-family: sans-serif;
         margin-top: 6px;
-        font-size: 14px;
+        font-size: 12px;
+        font-weight: bold;
 }
 .rating {
         color: white;
         margin-left: 16px;
         margin-bottom: 0px;
         font-family: sans-serif;
-        margin-top: 6px;
-        font-size: 20px;
+        margin-top: 3px;
+        font-size: 12px;
+        font-weight: bold;
 }
 .roboto-light {
   font-family: "Roboto", sans-serif;
@@ -317,10 +321,10 @@ body, html {
 .custom-checkbox {
   display: flex;
   width: 180px;
-  height: 220px;
+  height: 235px;
   background-color: rgb(49, 48, 53);
   margin: 6px;
-  border-radius: 25px;
+  border-radius: 15px;
   cursor: pointer;
   border: 2px solid #000000;
   font-size: 18px;
