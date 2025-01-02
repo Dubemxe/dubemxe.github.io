@@ -31,7 +31,7 @@ body, html {
   color: rgba(247, 243, 12, 0.911);
   font-size: 52px;
   font-family: sans-serif;
-  font-weight: bolder;
+  font-weight: 400;
 }
 
 .client_cred {
