@@ -193,30 +193,6 @@ body, html {
   background-color: rgba(8, 8, 8, 0.007);
   margin-bottom: 24px;
 }
-.pic2 {
-  width: 75px;
-  height: 75px;
-  margin-top: 85px;
-  margin-left: 10px;
-  cursor: pointer;
-  margin-bottom: 0px;
-}
-.pic1 {
-  width: 112px;
-  height: 112px;
-  margin-top: 61px;
-  margin-bottom: 0px;
-  margin-left: 270px;
-  cursor: pointer;
-}
-.ham_menu {
-  width: 60px;
-  height: 60px;
-  margin-top: 28px;
-  margin-left: 10px;
-  cursor: pointer;
-  display: none;
-}
 .butn {
   height: 65px;
   width: 200px;
