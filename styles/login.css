@@ -1,6 +1,10 @@
 body, html {
   margin: 0;
-  font-family: "Manrope";
+}
+.faculty-glyphic-regular {
+  font-family: "Faculty Glyphic", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 .theBox {
   width: 100%;
@@ -38,9 +42,8 @@ body, html {
 }
 .wlctxt {
   color: rgba(247, 243, 12, 0.911);
-  font-size: 40px;
+  font-size: 50px;
   font-family: sans-serif;
-  font-weight: bolder;
 }
 
 .client_cred {
@@ -75,7 +78,7 @@ body, html {
   border-radius: 10px;
   width: 380px;
   height: 40px;
-  margin-left: 20px;
+  margin-left: 32px;
   font-size: 18px;
   font-weight: bold;
   color: white;
