@@ -525,3 +525,12 @@ body, html {
 }
   
 }
+.search_back {
+  display: none;
+  background-color: rgb(0, 0, 17);
+  width: 615px;
+  height: 1280px;
+ 
+  position: absolute;
+  left: 50%;
+}
