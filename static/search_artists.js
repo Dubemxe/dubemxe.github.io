@@ -53,9 +53,10 @@ async function searchArtist() {
               <p class="artistname">${artist.name}</p>
                  </div>
               <p class="figtxt">${formatFollowers(artist.followers.total)} Monthly Listeners</p>
-             
-              <span>i ${`https://v1.nocodeapi.com/jmusic3/spotify/webvybGfTcWRBfis/artists/${artistId}`}</span>
-              
+            <div class="div3"> 
+              <span>i \"${`https://v1.nocodeapi.com/jmusic3/spotify/webvybGfTcWRBfis/artists/${artistId}`}</span>
+              <p>"</p>
+              </div>
           </div> `;
           return trackHTML;
         }).join('');
