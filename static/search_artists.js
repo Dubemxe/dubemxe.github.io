@@ -38,8 +38,8 @@ async function searchArtist() {
           return;
       }
       // Update the Search Results section
-      const searchResultsContainer =  const trackHTML = `
-        const artistId = `${artist.id}`;
+      const searchResultsContainer = document.getElementById('searchbackDiv');
+        const trackHTML = `
                 <div class="search_back">
               <div class="div1">
     <p class="searchtxt">Search Results</p>
@@ -54,14 +54,12 @@ async function searchArtist() {
                  </div>
               <p class="figtxt">${formatFollowers(artist.followers.total)} Monthly Listeners</p>
             <div class="div3"> 
-              <span>i \"${`https://v1.nocodeapi.com/jmusic3/spotify/webvybGfTcWRBfis/artists/${artistId}`}</span>
+              <span>i <a href="https://v1.nocodeapi.com/jmusic3/spotify/webvybGfTcWRBfis/artists/${artist.id}"></a></span>
               <p>"</p>
               </div>
-          </div> `;
-          return trackHTML;
-        }).join('');
-
-        document.getElementById('searchbackDiv').innerHTML = songListHTML;
+          </div> 
+          `;
+        document.getElementById('searchbackDiv').innerHTML = trackHTML;
    } catch (error) {
       console.error('Error fetching artist data:', error);
   }
