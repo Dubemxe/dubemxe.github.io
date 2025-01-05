@@ -1,4 +1,4 @@
-function popupDiv() {
+function popupaDiv() {
 
   const contentDiv = document.getElementById('searchbackDiv');
 
