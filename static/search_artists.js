@@ -34,7 +34,7 @@ async function searchArtist() {
 
       // If no artist is found
       if (!artist) {
-          alert('No artist found. Please try a different name.');
+          console.log('No artist found. Please try a different name.');
           return;
       }
       // Update the Search Results section
