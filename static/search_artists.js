@@ -59,7 +59,7 @@ async function searchArtist() {
               </div>
           </div> 
           `;
-        document.getElementById('searchbackDiv').innerHTML = trackHTML;
+       searchResultsContainer.innerHTML += trackHTML;
    } catch (error) {
       console.error('Error fetching artist data:', error);
   }
