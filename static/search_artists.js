@@ -19,7 +19,6 @@ async function searchArtist() {
       alert('Please enter an artist name');
       return;
   }
-  console.log('Searching for artists...');
   // Spotify API URL for searching artists
   const searchUrl = `https://v1.nocodeapi.com/jmusic4/spotify/kibKUujvhYKHJxPL/search?q=${encodeURIComponent(artistQuery)}&type=artist`;
   // Fetch the artist's data
@@ -40,7 +39,7 @@ async function searchArtist() {
       // Update the Search Results section
       const searchResultsContainer = document.getElementById('searchbackDiv');
         const trackHTML = `
-                <div class="search_back">
+                <div>
               <div class="div1">
     <p class="searchtxt">Search Results</p>
     <img src="styles/images/icons8-x-50 white.png" class="imgd">
