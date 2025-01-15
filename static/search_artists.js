@@ -21,7 +21,7 @@ async function searchArtist() {
   }
   console.log('Searching for artists...');
   // Spotify API URL for searching artists
-  const searchUrl = `https://v1.nocodeapi.com/jmusic3/spotify/webvybGfTcWRBfis/search?q=${encodeURIComponent(artistQuery)}&type=artist`;
+  const searchUrl = `https://v1.nocodeapi.com/jmusic4/spotify/kibKUujvhYKHJxPL/search?q=${encodeURIComponent(artistQuery)}&type=artist`;
   // Fetch the artist's data
   try {
       const response = await fetch(searchUrl);
@@ -54,7 +54,7 @@ async function searchArtist() {
                  </div>
               <p class="figtxt">${formatFollowers(artist.followers.total)} Monthly Listeners</p>
             <div class="div3"> 
-              <span>i <a href="https://v1.nocodeapi.com/jmusic3/spotify/webvybGfTcWRBfis/artists/${artist.id}"></a></span>
+              <span>i <a href="https://v1.nocodeapi.com/jmusic4/spotify/kibKUujvhYKHJxPL/artists/${artist.id}"></a></span>
               <p>"</p>
               </div>
           </div> 
