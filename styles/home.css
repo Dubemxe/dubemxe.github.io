@@ -561,7 +561,7 @@ p {
   flex-direction: row;
   margin-left: 30px;
 }
-.imge {
+#B_imge {
   border: solid rgb(129, 108, 108);
   width: 120px;
   height: 120px;
