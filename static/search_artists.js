@@ -48,7 +48,8 @@ async function searchArtist() {
       <p class="select">select</p><input type="checkbox" class="checker">
     </div>
       <div class="div2">
-              <img src="${artist.images[0].url}" id="imge">
+              <img src="${artist.images[0].url}" class="albumImage">
+              
               <p class="artistname">${artist.name}</p>
                  </div>
               <p class="figtxt">${formatFollowers(artist.followers.total)} Monthly Listeners</p>
