@@ -45,14 +45,15 @@ async function searchArtist() {
     <img src="styles/images/icons8-x-50 white.png" class="imgd">
       </div>
       <div class="div2">
-      <p class="select">select</p><input type="checkbox" class="checker">
+      <input type="checkbox" class="checker">
     </div>
                 
       <div class="divdd2">          
-                <img src="${artist.images[0].url}" id="imge">
+              <div class="imge" style="background-image: url('${artist.images[0]?.url || 'styles/images/adPic.jpg'}');"></div>
               <p class="artistname">${artist.name}</p>
-                 </div>
-              <p class="figtxt">${formatFollowers(artist.followers.total)} Monthly Listeners</p>
+              <p class="figtxt">${formatFollowers(artist.followers.total)} Monthly Listeners</p> </div> </div>
+
+           
             <div class="div3"> 
               <p>"</p> <p class=bio>${artist.bio}</p>
               <p>"</p>
