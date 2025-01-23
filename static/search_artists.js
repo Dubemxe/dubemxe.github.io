@@ -54,7 +54,7 @@ async function searchArtist() {
                  </div>
               <p class="figtxt">${formatFollowers(artist.followers.total)} Monthly Listeners</p>
             <div class="div3"> 
-              <span>i <a href="https://v1.nocodeapi.com/jmusic4/spotify/kibKUujvhYKHJxPL/artists/${artist.id}"></a></span>
+              <p>"</p> <p class=bio>${artist.bio}</p>
               <p>"</p>
               </div>
           </div> 
