@@ -48,7 +48,7 @@ async function searchArtist() {
       <p class="select">select</p><input type="checkbox" class="checker">
     </div>
                 
-      <div class="div2">          
+      <div class="divdd2">          
                 <img src="${artist.images[0].url}" id="imge">
               <p class="artistname">${artist.name}</p>
                  </div>
