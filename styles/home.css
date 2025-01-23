@@ -562,28 +562,27 @@ p {
   flex-direction: row;
   margin-left: 30px;
 }
-#imge {
-  border: 2px solid rgb(129, 108, 108);
-  width: 160px;
-  height: 160px;
-  border-radius: 60px;
-  margin-right: 15px;
+.imge {
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  margin: 20px 0;
+  border-radius: 10px;
 }
 .artistname {
-  font-weight: bold;
+  font-weight: bolder;
   margin-right: 30px;
+  font-size: 2rem;
+  margin-top: 12px;
 }
-.select {
-  font-size: 25px;
-  margin-right: 6px;
-  margin-left: 440px;
-  margin-bottom: 12px;
-}
+
 .checker {
-  width: 24px;
+  width: 38px;
   background-color: #00BCD4;
-  height: 24px;
+  height: 38px;
   margin-top: 28px;
+  margin-left: 130px;
 }
 .figtxt {
   font-size: 25px;
