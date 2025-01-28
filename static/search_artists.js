@@ -39,8 +39,8 @@ async function searchArtist() {
       // Update the Search Results section
       const searchResultsContainer = document.getElementById('searchbackDiv');
         const trackHTML = `
-                <div>
-              <div class="div1">
+        <div>
+                   <div class="div1">
     <p class="searchtxt">Search Results</p>
     <img src="styles/images/icons8-x-50 white.png" class="imgd">
       </div>
@@ -49,7 +49,7 @@ async function searchArtist() {
     </div>
                 
       <div class="divdd2">          
-              <div class="imge" style="background-image: url('${artist.images[0]?.url || 'styles/images/adPic.jpg'}');"></div>
+              <div class="imge" style="background-image: url('${artist.images[0]?.url || 'styles/images/adPic.jpg'}');">
               <p class="artistname">${artist.name}</p>
               <p class="figtxt">${formatFollowers(artist.followers.total)} Monthly Listeners</p> </div> </div>
 
@@ -58,7 +58,7 @@ async function searchArtist() {
               <p>"</p> <p class=bio>${artist.bio}</p>
               <p>"</p>
               </div>
-          </div> 
+      </div>
           `;
        searchResultsContainer.innerHTML += trackHTML;
    } catch (error) {
