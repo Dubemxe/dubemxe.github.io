@@ -44,6 +44,11 @@ async function searchArtist() {
     <p class="searchtxt">Search Results</p>
     <img src="styles/images/icons8-x-50 white.png" class="imgd" onclick="popupaDiv()">
       </div>
+
+      <div class="div2">
+      <input type="checkbox" class="checkerdh">
+    </div>
+               
     </div>
           `;
        searchResultsContainer.innerHTML += trackHTML;
