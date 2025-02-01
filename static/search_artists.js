@@ -42,23 +42,9 @@ async function searchArtist() {
         <div>
                    <div class="div1">
     <p class="searchtxt">Search Results</p>
-    <img src="styles/images/icons8-x-50 white.png" class="imgd">
+    <img src="styles/images/icons8-x-50 white.png" class="imgd" onclick="popupaDiv()">
       </div>
-      <div class="div2">
-      <input type="checkbox" class="checkerdh">
     </div>
-                
-      <div class="divdd2">          
-              <div class="imge" style="background-image: url('${artist.images[0]?.url || 'styles/images/adPic.jpg'}');">
-              <p class="artistname">${artist.name}</p>
-              <p class="figtxt">${formatFollowers(artist.followers.total)} Monthly Listeners</p> </div> </div>
-
-           
-            <div class="div3"> 
-              <p>"</p> <p class=bio>${artist.bio}</p>
-              <p>"</p>
-              </div>
-      </div>
           `;
        searchResultsContainer.innerHTML += trackHTML;
    } catch (error) {
