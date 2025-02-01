@@ -48,7 +48,11 @@ async function searchArtist() {
       <div class="div2">
       <input type="checkbox" class="checkerdh">
     </div>
-               
+
+              <div class="divdd2">          
+              <div class="imge" style="background-image: url('${artist.images[0]?.url || 'styles/images/adPic.jpg'}');">
+              <p class="artistname">${artist.name}</p>
+              <p class="figtxt">${formatFollowers(artist.followers.total)} Monthly Listeners</p> </div> </div>
     </div>
           `;
        searchResultsContainer.innerHTML += trackHTML;
