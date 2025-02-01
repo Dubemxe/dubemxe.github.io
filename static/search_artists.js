@@ -45,7 +45,7 @@ async function searchArtist() {
     <img src="styles/images/icons8-x-50 white.png" class="imgd">
       </div>
       <div class="div2">
-      <input type="checkbox" class="checker">
+      <input type="checkbox" class="checkerdh">
     </div>
                 
       <div class="divdd2">          
