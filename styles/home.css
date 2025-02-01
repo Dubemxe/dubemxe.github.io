@@ -573,7 +573,7 @@ p {
 }
 .artistname {
   font-weight: bolder;
-  margin-right: 30px;
+  margin-left: 18px;
   font-size: 2rem;
   margin-top: 12px;
 }
@@ -587,9 +587,9 @@ p {
 }
 .figtxt {
   font-size: 25px;
-  margin-top: 130px;
+  margin-top: 14px;
   margin-bottom: 0px;
-  margin-left: 40px;
+  margin-left: 20px;
 }
 .info {
   font-family:'Times New Roman', Times, serif;
