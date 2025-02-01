@@ -546,14 +546,15 @@ p {
 }
 .imgd {
   width: 45px;
+  margin-left: 10px;
   height: 45px;
   margin-top: 10px;
 }
 
 .div1 {
   display: flex;
-  .div1 {
   display: flex;
+  margin-top: 24px;
   flex-direction: row;
   column-gap: 30px;
 }
