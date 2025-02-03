@@ -568,14 +568,19 @@ p {
   height: 520px;
   background-size: cover;
   background-position: center;
-  margin: 20px 0;
+    position: relative;
+    display: flex;
+    align-items: flex-end; /* Ensures content is at the bottom */
+    justify-content: flex-start;
+  margin: 20px;
   border-radius: 10px;
+  
 }
 .artistname {
   font-weight: bolder;
   margin-left: 18px;
   font-size: 2rem;
-  margin-top: 342px;
+  margin-top: 12px;
 }
 
 .checkerdh {
