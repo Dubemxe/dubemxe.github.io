@@ -54,7 +54,7 @@ async function searchArtist() {
               <div class="checkdiv">
               <input type="checkbox" class="checkerdh"> </div>
                    <div class="bdiv">
-              <p class="artistname">${artist.name}</p>
+              <p class="artistname">${artist.name}</p> </div> </div> </div>
               <p class=bio>${artist.bio}</p>
 
     </div>
