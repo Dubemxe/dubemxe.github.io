@@ -600,8 +600,8 @@ p {
         -moz-appearance: none;
         width: 38px;
         height: 38px;
-        border: 2px solid #e1dfe2;
-        background-color: transparent;
+        border: 1px solid #e1dfe2;
+        background-color: rgba(0, 0, 0, 0.226);;
         cursor: pointer;
         display: inline-block;
         position: absolute;
@@ -611,8 +611,8 @@ p {
     }  
 .checkerdh:checked::after {
   content: "✔";
-  font-size: 30px;
-  color: rgb(161, 149, 149);
+  font-size: 35px;
+  color: #e1dfe2;
   position: absolute;
   left: 50%;
   top: 50%;
