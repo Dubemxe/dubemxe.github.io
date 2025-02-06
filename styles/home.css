@@ -584,8 +584,9 @@ p {
 }
 .bdiv {
   display: flex;
-    align-items: flex-end; /* Ensures content is at the bottom */
-    justify-content: flex-start;
+  align-items: flex-end; /* Ensures content is at the bottom */
+  justify-content: flex-start;
+  flex-direction: column;
 }
 .checkdiv {
     position: absolute;
@@ -599,7 +600,7 @@ p {
         -moz-appearance: none;
         width: 38px;
         height: 38px;
-        border: 6px solid #9159da;
+        border: 3px solid #9159da;
         background-color: transparent;
         cursor: pointer;
         display: inline-block;
