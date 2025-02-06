@@ -41,15 +41,15 @@ async function searchArtist() {
         data.artists.forEach((artist, index) => {
         const trackHTML = `
         <div>
-                   <div id="div1${index}">
+                   <div class="div1">
     <p class="searchtxt">Search Results</p>
-    <img src="styles/images/icons8-x-50 white.png" class="imgd" onclick="popupaDiv()">
+    <img src="styles/images/icons8-x-50 white.png" class="imgd" onclick="popupaDiv(${index})">
       </div>
 
       <div class="div2">
     </div>
 
-              <div class="divdd2">          
+              <div id="divdd2${index}">          
               <div class="imge" style="background-image: url('${artist.images[0]?.url || 'styles/images/adPic.jpg'}');">
               <div class="checkdiv">
               <input type="checkbox" class="checkerdh"> </div>
