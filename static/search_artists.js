@@ -30,10 +30,10 @@ async function getTrackIdsByArtist(artistName) {
     return [];
   }
 }
-async function myTop5(atrackIds) {
+async function myTop5rep(atrackIds) {
     let allTrackIds = []; // To store track IDs from all artists
 
-    for (const artist of artistNames) {
+    for (const artist of atrackIds) {
         const trackIds = atrackIds;
         console.log(`Track IDs for ${artist}:`, trackIds);
 
@@ -45,7 +45,7 @@ async function myTop5(atrackIds) {
     const encodedTrackIds = encodeURIComponent(allTrackIds.join(','));
    window.location.href = `mysearchpage.html#trackIds=${encodedTrackIds}`;
 }
-function toSearchpage() {
+function toSearchpagerep() {
         const selectedArtists = [];
         const checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
 
@@ -54,7 +54,7 @@ function toSearchpage() {
         });
 
         if (selectedArtists.length > 0) {
-                myTop5(selectedArtists);
+                myTop5rep(selectedArtists);
         }
 }
 function popupaDiv() {
