@@ -624,8 +624,8 @@ p {
   margin-bottom: 14px;
   margin-left: 0px;
 }
-.info {
-  font-family:'Times New Roman', Times, serif;
+.bio {
+  font-size: 17px;
 }
 .div3 {
   display: flex;
