@@ -38,18 +38,18 @@ async function searchArtist() {
       }
       // Update the Search Results section
       const searchResultsContainer = document.getElementById('searchbackDiv');
-        data.artists.forEach((artist, index) => {
-        const trackHTML = `
+      searchResultsContainer.innerHTML = "";
+    const trackHTML = `
         <div>
                    <div class="div1">
     <p class="searchtxt">Search Results</p>
-    <img src="styles/images/icons8-x-50 white.png" class="imgd" onclick="popupaDiv(${index})">
+    <img src="styles/images/icons8-x-50 white.png" class="imgd" onclick="popupaDiv()">
       </div>
 
       <div class="div2">
     </div>
 
-              <div id="divdd2${index}">          
+              <div id="divdd2">          
               <div class="imge" style="background-image: url('${artist.images[0]?.url || 'styles/images/adPic.jpg'}');">
               <div class="checkdiv">
               <input type="checkbox" class="checkerdh"> </div>
