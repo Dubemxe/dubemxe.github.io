@@ -612,7 +612,7 @@ p {
 .checkerdh:checked::after {
   content: "✔";
   font-size: 30px;
-  color: #81e70c;
+  color: rgb(161, 149, 149);
   position: absolute;
   left: 50%;
   top: 50%;
