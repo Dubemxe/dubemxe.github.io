@@ -38,9 +38,10 @@ async function searchArtist() {
       }
       // Update the Search Results section
       const searchResultsContainer = document.getElementById('searchbackDiv');
+        data.artists.forEach((artist, index) => {
         const trackHTML = `
         <div>
-                   <div class="div1">
+                   <div id="div1${index}">
     <p class="searchtxt">Search Results</p>
     <img src="styles/images/icons8-x-50 white.png" class="imgd" onclick="popupaDiv()">
       </div>
@@ -59,7 +60,8 @@ async function searchArtist() {
 
     </div>
           `;
-       searchResultsContainer.innerHTML += trackHTML;
+        searchResultsContainer.innerHTML += trackHTML;
+        });
    } catch (error) {
       console.error('Error fetching artist data:', error);
   }
