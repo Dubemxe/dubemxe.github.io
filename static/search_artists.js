@@ -58,8 +58,7 @@ function toSearchrep() {
         }
 }
 async function getArtistBio(artistName) {
-    const apiKey = '15e5f9128c80ca2ea5b7bb90bbcda271
-';
+    const apiKey = '15e5f9128c80ca2ea5b7bb90bbcda271';
     const bioUrl = `https://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=${encodeURIComponent(artistName)}&api_key=${apiKey}&format=json`;
 
     try {
