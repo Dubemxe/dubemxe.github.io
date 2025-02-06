@@ -57,6 +57,26 @@ function toSearchrep() {
                 myTop5rep(selectedArtists);
         }
 }
+async function getArtistBio(artistName) {
+    const apiKey = '15e5f9128c80ca2ea5b7bb90bbcda271
+';
+    const bioUrl = `https://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=${encodeURIComponent(artistName)}&api_key=${apiKey}&format=json`;
+
+    try {
+        const response = await fetch(bioUrl);
+        const data = await response.json();
+
+        if (data.artist && data.artist.bio && data.artist.bio.summary) {
+            return data.artist.bio.summary; // Returns the artist's biography
+        } else {
+            return "Biography not available.";
+        }
+    } catch (error) {
+        console.error("Error fetching artist bio:", error);
+        return "Error fetching biography.";
+    }
+}
+
 function popupaDiv() {
 
   const contentDiv = document.getElementById('searchbackDiv');
@@ -100,6 +120,7 @@ async function searchArtist() {
       searchResultsContainer.innerHTML = "";
     
        const artistId = artist.id; 
+       const artistBio = await getArtistBio(artist.name);
     const trackHTML = `
         <div>
                    <div class="div1">
@@ -116,7 +137,7 @@ async function searchArtist() {
               <input type="checkbox" class="checkerdh" value="${artistId}" onclick="toSearchrep()"> </div>
                    <div class="bdiv">
               <p class="artistname">${artist.name}</p> </div> </div> </div>
-              <p class=bio>${artist.bio}</p>
+              <p class=bio>${artistBio}</p>
 
     </div>
           `;
