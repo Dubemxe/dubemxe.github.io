@@ -100,7 +100,7 @@ async function getArtistInfo(artistName) {
 
         <h2 class="name">${artist.name}</h2>
         <p class="followers">Followers: ${fmtCount(artist.followers.total)}</p>
-        <p class="rating">Rating on spotify: ${artist.popularity}</p>
+        <p class="rating">Rating on spotify: ${artist.popularity}%</p>
       </div>
     `;
      return  { artistInfoHTML, trackIds };
