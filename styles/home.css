@@ -546,6 +546,7 @@ p {
 }
 .imgd {
   width: 45px;
+  cursor: pointer;
   margin-left: 10px;
   height: 45px;
   margin-top: 10px;
