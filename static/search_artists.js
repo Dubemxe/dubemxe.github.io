@@ -1,3 +1,62 @@
+async function getTrackIdsByArtist(artistName) {
+  try {
+
+    // Encode the artist name for use in the URL
+    const encodedArtistName = encodeURIComponent(artistName);
+
+    // Construct the search URL for tracks by the artist
+    const searchUrl = `https://v1.nocodeapi.com/jmusic3/spotify/webvybGfTcWRBfis/search?q=${encodedArtistName}&type=track`;
+
+    // Make a GET request to the search URL with the Spotify API access token
+    const response = await fetch(searchUrl);
+
+    // Check if the response is successful
+    if (!response.ok) {
+      throw new Error('Failed to fetch tracks by artist');
+    }
+
+    // Parse the response JSON
+    const data = await response.json();
+        let trackIds = data.tracks.items.map(item => item.id);
+
+    // Set limit to 5
+    trackIds = trackIds.slice(0, 5);
+
+    // Return the array of track IDs
+    //console.log("Top tracks:", trackIds);
+    return trackIds;
+  } catch (error) {
+    console.error('Error fetching track IDs by artist:', error);
+    return [];
+  }
+}
+async function myTop5(artistNames) {
+    let allTrackIds = []; // To store track IDs from all artists
+
+    for (const artist of artistNames) {
+        const trackIds = await getTrackIdsByArtist(artist);
+        console.log(`Track IDs for ${artist}:`, trackIds);
+
+        // Add the trackIds for this artist to the allTrackIds array
+        allTrackIds = allTrackIds.concat(trackIds);
+    }
+
+    // Convert the entire trackIds array to a string and append it to the URL hash
+    const encodedTrackIds = encodeURIComponent(allTrackIds.join(','));
+   window.location.href = `mysearchpage.html#trackIds=${encodedTrackIds}`;
+}
+function toSearchpage() {
+        const selectedArtists = [];
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+
+        checkboxes.forEach(checkbox => {
+                selectedArtists.push(checkbox.value);
+        });
+
+        if (selectedArtists.length > 0) {
+                myTop5(selectedArtists);
+        }
+}
 function popupaDiv() {
 
   const contentDiv = document.getElementById('searchbackDiv');
@@ -49,7 +108,7 @@ async function searchArtist() {
       <div class="div2">
     </div>
 
-              <div id="divdd2">          
+              <div id="divdd2 onclick="toSearchpage()">          
               <div class="imge" style="background-image: url('${artist.images[0]?.url || 'styles/images/adPic.jpg'}');">
               <div class="checkdiv">
               <input type="checkbox" class="checkerdh"> </div>
