@@ -98,6 +98,8 @@ async function searchArtist() {
       // Update the Search Results section
       const searchResultsContainer = document.getElementById('searchbackDiv');
       searchResultsContainer.innerHTML = "";
+    
+       const artistId = artist.id; 
     const trackHTML = `
         <div>
                    <div class="div1">
@@ -111,7 +113,7 @@ async function searchArtist() {
               <div id="divdd2 onclick="toSearchpage()">          
               <div class="imge" style="background-image: url('${artist.images[0]?.url || 'styles/images/adPic.jpg'}');">
               <div class="checkdiv">
-              <input type="checkbox" class="checkerdh"> </div>
+              <input type="checkbox" class="checkerdh" value="${artistId}" onclick="toSearchpage()"> </div>
                    <div class="bdiv">
               <p class="artistname">${artist.name}</p> </div> </div> </div>
               <p class=bio>${artist.bio}</p>
