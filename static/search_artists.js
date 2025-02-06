@@ -61,12 +61,15 @@ async function searchArtist() {
     </div>
           `;
         searchResultsContainer.innerHTML += trackHTML;
-        });
    } catch (error) {
       console.error('Error fetching artist data:', error);
   }
 }
-
+document.getElementById('searchQuery').addEventListener('keydown', function(event) {
+  if (event.key === 'Enter') {
+           document.getElementById('sBtn').click();  // Trigger search button click
+  }
+});
 function formatFollowers(count) {
   if (count >= 1e6) {
       return (count / 1e6).toFixed(1) + 'M';
