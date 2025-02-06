@@ -30,11 +30,11 @@ async function getTrackIdsByArtist(artistName) {
     return [];
   }
 }
-async function myTop5(artistNames) {
+async function myTop5(atrackIds) {
     let allTrackIds = []; // To store track IDs from all artists
 
     for (const artist of artistNames) {
-        const trackIds = await getTrackIdsByArtist(artist);
+        const trackIds = atrackIds;
         console.log(`Track IDs for ${artist}:`, trackIds);
 
         // Add the trackIds for this artist to the allTrackIds array
