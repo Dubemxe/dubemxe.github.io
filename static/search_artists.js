@@ -55,7 +55,6 @@ async function searchArtist() {
               <input type="checkbox" class="checkerdh"> </div>
                    <div class="bdiv">
               <p class="artistname">${artist.name}</p>
-              <p class="figtxt">${formatFollowers(artist.followers.total)} Monthly Listeners</p> </div> </div> </div>
               <p class=bio>${artist.bio}</p>
 
     </div>
