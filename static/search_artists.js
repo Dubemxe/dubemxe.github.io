@@ -43,7 +43,6 @@ async function myTop5rep(atrackIds) {
 
     // Convert the entire trackIds array to a string and append it to the URL hash
     const encodedTrackIds = encodeURIComponent(allTrackIds.join(','));
-   window.location.href = `mysearchpage.html#trackIds=${encodedTrackIds}`;
 }
 function toSearchrep() {
         const selectedArtists = [];
@@ -130,10 +129,10 @@ async function searchArtist() {
       <div class="div2">
     </div>
 
-              <div id="divdd2 onclick="toSearchrep()">          
+              <div id="divdd2">          
               <div class="imge" style="background-image: url('${artist.images[0]?.url || 'styles/images/adPic.jpg'}');">
               <div class="checkdiv">
-              <input type="checkbox" class="checkerdh" value="${artistId}" onclick="toSearchrep()"> </div>
+              <input type="checkbox" class="checkerdh" value="${artistId}" onclick="myTop5rep()"> </div>
                    <div class="bdiv">
               <p class="artistname">${artist.name}</p> </div> </div> </div>
               <p class=bio>${artistBio}</p>
