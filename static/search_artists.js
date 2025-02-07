@@ -86,7 +86,21 @@ function popupaDiv() {
     contentDiv.style.display = 'none'; // Hide the div
   }
 }
+let favoriteArtists = []; // Array to store selected artist IDs
 
+function addToFavorites(checkbox) {
+    const artistId = checkbox.value;
+
+    if (checkbox.checked) {
+        if (!favoriteArtists.includes(artistId)) {
+            favoriteArtists.push(artistId);
+        }
+    } else {
+        favoriteArtists = favoriteArtists.filter(id => id !== artistId);
+    }
+
+    console.log(favoriteArtists); // Debugging: Check if values update correctly
+}
 async function searchArtist() {
   // Get the artist's name from the input field
   const artistQuery = document.getElementById('artistSearchInput').value.trim();
@@ -146,21 +160,6 @@ async function searchArtist() {
    } catch (error) {
       console.error('Error fetching artist data:', error);
   }
-}
-let favoriteArtists = []; // Array to store selected artist IDs
-
-function addToFavorites(checkbox) {
-    const artistId = checkbox.value;
-
-    if (checkbox.checked) {
-        if (!favoriteArtists.includes(artistId)) {
-            favoriteArtists.push(artistId);
-        }
-    } else {
-        favoriteArtists = favoriteArtists.filter(id => id !== artistId);
-    }
-
-    console.log(favoriteArtists); // Debugging: Check if values update correctly
 }
 
 document.getElementById('searchQuery').addEventListener('keydown', function(event) {
