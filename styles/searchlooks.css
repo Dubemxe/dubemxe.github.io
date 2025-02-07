@@ -159,6 +159,7 @@ html, body {
   padding-top: 10px;
   width: 100%;
   margin-bottom: 1px;
+  padding-bottom: 4px;
   display: grid;
   grid-template-columns: 0.5fr 2fr 1fr 1fr;
   column-gap: px;
