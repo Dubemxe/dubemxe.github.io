@@ -117,7 +117,7 @@ async function searchArtist() {
       const searchResultsContainer = document.getElementById('searchbackDiv');
       searchResultsContainer.innerHTML = "";
     
-       const artistId = artist.id; 
+       const artistId = await getTrackIdsByArtist(artist.name); 
        const artistBio = await getArtistBio(artist.name);
     const trackHTML = `
         <div>
