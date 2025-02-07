@@ -119,8 +119,11 @@ async function searchArtist() {
     
        const artistId = await getTrackIdsByArtist(artist.name); 
        const artistBio = await getArtistBio(artist.name);
-    const trackHTML = `
-        <div>
+
+       const artistElement = document.createElement('div');
+       artistElement.classList.add('search_back');
+
+    /*const trackHTML*/ artistElement.innerHTML = `
                    <div class="div1">
     <p class="searchtxt">Search Results</p>
     <img src="styles/images/icons8-x-50 white.png" class="imgd" onclick="popupaDiv()">
@@ -132,21 +135,37 @@ async function searchArtist() {
               <div id="divdd2">          
               <div class="imge" style="background-image: url('${artist.images[0]?.url || 'styles/images/adPic.jpg'}');">
               <div class="checkdiv">
-              <input type="checkbox" class="checkerdh" value="${artistId}" onclick="toSearchrep()"> </div>
+              <input type="checkbox" class="checkerdh" value="${artistId}" onclick="addToFavorites(this)"> </div>
                    <div class="bdiv">
               <p class="artistname">${artist.name}</p> </div> </div> </div>
               <p class=bio>${artistBio}</p>
-
-    </div>
           `;
-        searchResultsContainer.innerHTML += trackHTML;
+        /*searchResultsContainer.innerHTML += trackHTML;*/
+        searchResultsContainer.appendChild(artistElement);
+      });
    } catch (error) {
       console.error('Error fetching artist data:', error);
   }
 }
+let favoriteArtists = []; // Array to store selected artist IDs
+
+function addToFavorites(checkbox) {
+    const artistId = checkbox.value;
+
+    if (checkbox.checked) {
+        if (!favoriteArtists.includes(artistId)) {
+            favoriteArtists.push(artistId);
+        }
+    } else {
+        favoriteArtists = favoriteArtists.filter(id => id !== artistId);
+    }
+
+    console.log(favoriteArtists); // Debugging: Check if values update correctly
+}
+
 document.getElementById('searchQuery').addEventListener('keydown', function(event) {
   if (event.key === 'Enter') {
-           document.getElementById('sBtn').click();  // Trigger search button click
+           document.getElementById('searchBtn').click();  // Trigger search button click
   }
 });
 function formatFollowers(count) {
