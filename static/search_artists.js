@@ -120,10 +120,10 @@ async function searchArtist() {
       }
 
       const data = await response.json();
-      const artistk = data.artists.items[0];
+      const artist = data.artists.items[0];
 
       // If no artist is found
-      if (!artistk) {
+      if (!artist) {
           console.log('No artist found. Please try a different name.');
           return;
       }
@@ -131,8 +131,8 @@ async function searchArtist() {
       const searchResultsContainer = document.getElementById('searchbackDiv');
       searchResultsContainer.innerHTML = "";
 
-    artistk.forEach(artist => {
-       const artistId = artist.id;
+    
+      const artistId = await getTrackIdsByArtist(artist.name);
       const artistBio = await getArtistBio(artist.name);
 
        const artistElement = document.createElement('div');
