@@ -157,7 +157,6 @@ async function searchArtist() {
           `;
         /*searchResultsContainer.innerHTML += trackHTML;*/
         searchResultsContainer.appendChild(artistElement);
-      });
     }  catch (error) {
       console.error('Error fetching artist data:', error);
   }
