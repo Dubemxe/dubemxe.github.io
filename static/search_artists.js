@@ -130,7 +130,8 @@ async function searchArtist() {
       // Update the Search Results section
       const searchResultsContainer = document.getElementById('searchbackDiv');
       searchResultsContainer.innerHTML = "";
-    
+
+    artist.forEach(artist => {
        const artistId = await getTrackIdsByArtist(artist.name); 
        const artistBio = await getArtistBio(artist.name);
 
@@ -157,7 +158,7 @@ async function searchArtist() {
         /*searchResultsContainer.innerHTML += trackHTML;*/
         searchResultsContainer.appendChild(artistElement);
       });
-   } catch (error) {
+    }  catch (error) {
       console.error('Error fetching artist data:', error);
   }
 }
