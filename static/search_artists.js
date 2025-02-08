@@ -132,8 +132,8 @@ async function searchArtist() {
       searchResultsContainer.innerHTML = "";
 
     artistk.forEach(artist => {
-       const artistId = await getTrackIdsByArtist(artist.name); 
-       const artistBio = await getArtistBio(artist.name);
+       const artistId = artist.id;
+      const artistBio = await getArtistBio(artist.name);
 
        const artistElement = document.createElement('div');
        artistElement.classList.add('search_back');
